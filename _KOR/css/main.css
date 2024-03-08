@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* main-visual */
+.main_vsual_wp.inner {padding: 0 0 0 85px;}
+
+/* 지금화순은 */
+.main_sec1 .left_wr {max-width: 470px;padding-left: 70px;}
+.main_sec1 .now_event {width: 100%;background: #F8F5E2;padding: 55px 40px;}
+.now_event .event_list {margin-top: 60px;padding-left: 1rem;}
+.now_event .event_list .item a {display: flex;}
+.now_event .event_list .item .d1 {font-size: 3.125rem;}
+.now_event .event_list .item .d2 {font-size: 0.75rem;}
+.now_event .event_list .item .t1

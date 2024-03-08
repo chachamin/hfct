@@ -1,0 +1,25 @@
+@charset "utf-8";
+@font-face
+{font-family: "NanumNeo";
+font-style: normal;
+font-weight: 300;
+src: url(font/NanumSquareNeo-Lt.woff2) format("woff2"),
+url(font/NanumSquareNeo-Lt.woff) format("woff");
+}
+
+@font-face
+{font-family: "NanumNeo";
+font-style: normal;
+font-weight: 400;
+src: url(font/NanumSquareNeo-Rg.woff2) format("woff2"),
+url(font/NanumSquareNeo-Rg.woff) format("woff");
+}
+
+@font-face
+{font-family: "NanumNeo";
+font-style: normal;
+font-weight: 500;
+src: url(font/NanumSquareNeo-Bd.woff2) format("woff2"),
+url(font/NanumSquareNeo-Bd.woff) format("woff");
+}
+
