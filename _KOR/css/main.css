@@ -1,13 +1,66 @@
 @charset "utf-8";
 
 /* main-visual */
-.main_vsual_wp.inner {padding: 0 0 0 85px;}
+/* .main_vsual_wp */
 
 /* 지금화순은 */
 .main_sec1 .left_wr {max-width: 470px;padding-left: 70px;}
-.main_sec1 .now_event {width: 100%;background: #F8F5E2;padding: 55px 40px;}
+.main_sec1 .now_event {width: 100%;background: #F8F5E2;padding: 55px 40px;margin-top: -200px;}
 .now_event .event_list {margin-top: 60px;padding-left: 1rem;}
+.now_event .event_list .item {margin-bottom: 90px;}
 .now_event .event_list .item a {display: flex;}
 .now_event .event_list .item .d1 {font-size: 3.125rem;}
-.now_event .event_list .item .d2 {font-size: 0.75rem;}
-.now_event .event_list .item .t1
+.now_event .event_list .item .d2 {font-size: 0.75rem;display: block;margin-top: -10px;}
+.now_event .event_list .item .text_box {padding-top: 13px;padding-left: 25px;}
+.now_event .event_list .item .t1 {font-size: 1.125rem;}
+.now_event .event_list .item .t2 {font-size: 0.875rem;}
+
+.main_sec .btn_box .btn_more {border: 1px solid rgba(39, 39, 96, .2);padding: 10px 0;width: 100%;text-align: center;transition: all 0.3s linear;position: relative;display: block;}
+.main_sec .btn_box .btn_more::after {content: '';display: block;width: calc(100% - 2px);height: 100%;border: 1px solid #272760;position: absolute;top: 0px;opacity: 0;transition: all 0.3s linear;}
+.main_sec .btn_box .btn_more:hover {border: 1px solid rgba(39, 39, 96, 1);}
+.main_sec .btn_box .btn_more:hover::after {opacity: 1;}
+
+.main_sec1 .right_wr {width: 100%; padding-left: 90px;justify-content: space-around;}
+.con_box.gal_type {width: 400px;}
+.con_box.gal_type a{display: block;}
+/* .con_box.gal_type a:hover {direction: ltr} */
+.con_box.gal_type .img_box {width: 100%;overflow: hidden;}
+.con_box.gal_type .img_box img {transition: all .3s;}
+.con_box.gal_type .text_box {margin-top: 35px;padding-left: 16px;}
+.con_box.gal_type .text_box .t1 {opacity: .7;}
+.con_box.gal_type .text_box .t2 {font-size: 1.875rem;}
+.con_box.gal_type .text_box .t2 {background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(#0CFFE1, #0CFFE1);background-size: 100% 15px, 0 15px;background-position: 100% 100%, 0 100%;background-repeat: no-repeat;transition: background-size 0.3s linear;display: inline;}
+.con_box.gal_type .text_box .t3 {font-size: 1.125rem;}
+.con_box.gal_type a:hover img {transform: scale(1.1);}
+.con_box.gal_type a:hover .t2 {background-size: 0 15px, 100% 15px;}
+
+/* 지금 우리는 */
+.main_sec2 {margin-top: 120px;padding: 120px 0;background: #F4F6F8;}
+.main_business {justify-content: center;}
+.main_business .con_box.gal_type {width: 720px;}
+.main_business .con_box.gal_type .img_box {height: 400px;}
+.main_business .con_box.gal_type .text_box {padding-left: 0;width: 80%;margin: 35px auto 0;}
+.main_business > div:nth-child(2n-1) {margin-right: 50px;}
+
+.main_business .con_box.gal_type .text_box .t2 {background-image: linear-gradient(rgb(244, 246, 248), rgb(244, 246, 248)), linear-gradient(#0CFFE1, #0CFFE1);}
+
+.main_sec2 .btn_box .btn_more, .main_sec3 .btn_box .btn_more {width: 400px;margin: 70px auto 0;}
+.main_sec2 .btn_box .btn_more {margin-top: 100px;}
+
+/* 프로그램 신청 */
+.main_sec3 {margin-top: 120px;}
+.main_pro .pro_list {justify-content: space-around;}
+.pro_list .con_box.gal_type .text_box {min-height: 280px;padding-bottom: 40px;border-bottom: 4px solid #272760;}
+
+/* 뉴스레터 */
+.main_newsletter {background: #F9F6E4;margin-top: 120px;}
+.main_newsletter .dp_flex {justify-content: end;}
+.subscribe {background: #FFF5B7;width: 450px;padding: 80px 30px;}
+.subscribe::after {content: '';display: block;width: 100%;height: 100%;}
+.subscribe .t1 {font-size: 1.875rem;}
+.subscribe .form_box {margin-top: 30px;}
+.subscribe .form_box input {width: 100%;border:none;background-color: #FFF5B7;border-bottom: 2px solid #272760;border-radius: 0;}
+.subscribe .form_box button {border: 1px solid rgba(39, 39, 96, .2);padding: 10px 0;width: 100%;text-align: center;transition: all 0.3s linear;position: relative;display: block;background: #FFF5B7;border-radius: 0;font-weight: normal;margin-top: 20px;}
+.subscribe .form_box button::after {content: '';display: block;width: calc(100% - 2px);height: 100%;border: 1px solid #272760;position: absolute;top: 0px;opacity: 0;transition: all 0.3s linear;}
+.subscribe .form_box button:hover {border: 1px solid rgba(39, 39, 96, 1);}
+.subscribe .form_box button:hover::after {opacity: 1;}

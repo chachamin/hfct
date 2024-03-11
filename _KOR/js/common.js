@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	//  main_v_sd
 	$('.main_v_sd').slick({
-		autoplay: true,
+		autoplay: false,
 		dots: true,
 		pauseOnDotsHover: false,
 		pauseOnHover: false,
