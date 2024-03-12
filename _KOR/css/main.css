@@ -53,10 +53,11 @@
 .pro_list .con_box.gal_type .text_box {min-height: 280px;padding-bottom: 40px;border-bottom: 4px solid #272760;}
 
 /* 뉴스레터 */
-.main_newsletter {background: #F9F6E4;margin-top: 120px;}
+.main_newsletter {margin-top: 120px;}
+.main_newsletter::before {content: '';display: block;width: 100%;height: 100%;background: #F9F6E4;position: absolute;top: 0;left: 0;z-index: -1;}
 .main_newsletter .dp_flex {justify-content: end;}
-.subscribe {background: #FFF5B7;width: 450px;padding: 80px 30px;}
-.subscribe::after {content: '';display: block;width: 100%;height: 100%;}
+.subscribe {background: #FFF5B7;padding: 80px 10px;}
+.subscribe::before {content: '';display: block;width: calc(100% + 80px);height: 100%;background-color: #FFF5B7;transform: skewX( -10deg );position: absolute;top: 0;left: -40px;z-index: -1;}
 .subscribe .t1 {font-size: 1.875rem;}
 .subscribe .form_box {margin-top: 30px;}
 .subscribe .form_box input {width: 100%;border:none;background-color: #FFF5B7;border-bottom: 2px solid #272760;border-radius: 0;}
@@ -64,3 +65,6 @@
 .subscribe .form_box button::after {content: '';display: block;width: calc(100% - 2px);height: 100%;border: 1px solid #272760;position: absolute;top: 0px;opacity: 0;transition: all 0.3s linear;}
 .subscribe .form_box button:hover {border: 1px solid rgba(39, 39, 96, 1);}
 .subscribe .form_box button:hover::after {opacity: 1;}
+
+/* 배너모음 */
+.main_banner {padding: ;}
