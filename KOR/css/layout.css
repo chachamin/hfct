@@ -1,4 +1,4 @@
-@charset "utf-8"; 
+@charset "utf-8";
 
 /*------------------------------------*\
 기본 레이아웃
@@ -6,6 +6,7 @@
 #wrapper {width: 100%;overflow: hidden}
 .inner {position: relative;padding: 0 85px;}
 .in_wrap {max-width: 1540px;width: 100%;}
+
 
 
 
