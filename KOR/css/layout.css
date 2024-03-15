@@ -47,7 +47,7 @@
 .gnb_r .site_map_btn .sitemap_ico span:nth-child(2){width:18px;margin-left:6px;}
 .gnb_r .site_map_btn .sitemap_ico span:last-child{margin-bottom:0;}
 
-.lang_type .type_list {position: absolute;right: 85px;top: -60px;border: 1px solid #ddd;border-radius: 20px;}
+.lang_type .type_list {position: absolute;right: 85px;top: -65px;border: 1px solid #ddd;border-radius: 20px;}
 .lang_type .type_list li a {font-size: 0.725rem;padding: 10px 10px;position: relative;}
 .lang_type .type_list li a::after {content: '';display: block;width: 1px;height: 8px;background: #ddd;position: absolute;top: 50%;transform: rotateY(-50%); right: 0;}
 .lang_type .type_list li a.on {color: #272760;font-weight: bold;}
