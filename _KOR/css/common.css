@@ -1,9 +1,16 @@
 @charset "utf-8";
 @import url("font.css");
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 /* reset */
 html {width:100%;}
 body {margin:0; padding:0; background:#fff; overflow-y:scroll; height:100%; width:100%; word-break:keep-all;}
-body {font-family:"NanumNeo", "맑은고딕","Malgun Gothic", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo", "sans-serif"; -webkit-font-smoothing: antialiased; font-size:16px; font-weight:400; letter-spacing:0.05em; color:#272760; line-height:1.5;}
+body {font-family:"NanumNeo", "맑은고딕","Malgun Gothic", "NanumSquareNeo-Variable", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo", "sans-serif"; -webkit-font-smoothing: antialiased; font-size:16px; font-weight:400; letter-spacing:0.05em; color:#272760; line-height:1.5;}
 * {color:inherit; font-family:inherit; font-size:inherit; font-weight:inherit; letter-spacing:inherit; line-height:inherit;box-sizing: border-box;}
 
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display:block;}
