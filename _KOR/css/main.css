@@ -2,10 +2,23 @@
 
 /* main-visual */
 /* .main_vsual_wp */
+.main_vsual_wp {padding-top: 100px;overflow:hidden;}
+.visual_wrap {position: relative;height:750px;}
+.main_v_sd .item{height:750px;position:relative;overflow: hidden;}
+
+.visual_wrap .slick-nav a{position:absolute;z-index:90;bottom: 340px;}
+.visual_wrap .slick-nav a.slick-prev,
+.visual_wrap .slick-nav a.slick-next{width:70px;height:70px;opacity: .5;}
+.visual_wrap .slick-nav a.slick-prev{left:0;background:url(../img/sd_l_db.png)}
+.visual_wrap .slick-nav a.slick-next{right:0;background:url(../img/sd_r_db.png)}
+
+.visual_wrap .slick-nav a.slick-prev:hover,
+.visual_wrap .slick-nav a.slick-next:hover{opacity: 1;}
+
 
 /* 지금화순은 */
 .main_sec1 .left_wr {max-width: 470px;padding-left: 70px;}
-.main_sec1 .now_event {width: 100%;background: #F8F5E2;padding: 55px 40px;margin-top: -200px;}
+.main_sec1 .now_event {width: 100%;background: #F8F5E2;padding: 55px 40px;margin-top: -150px;}
 .now_event .event_list {margin-top: 60px;padding-left: 1rem;}
 .now_event .event_list .item {margin-bottom: 90px;}
 .now_event .event_list .item a {display: flex;}
@@ -20,7 +33,7 @@
 .main_sec .btn_box .btn_more:hover {border: 1px solid rgba(39, 39, 96, 1);}
 .main_sec .btn_box .btn_more:hover::after {opacity: 1;}
 
-.main_sec1 .right_wr {width: 100%; padding-left: 90px;justify-content: space-around;}
+.main_sec1 .right_wr {width: 100%; padding-left: 90px;justify-content: space-around;padding-top: 6.25rem;}
 .con_box.gal_type {width: 400px;}
 .con_box.gal_type a{display: block;}
 /* .con_box.gal_type a:hover {direction: ltr} */
@@ -67,4 +80,11 @@
 .subscribe .form_box button:hover::after {opacity: 1;}
 
 /* 배너모음 */
-.main_banner {padding: ;}
+.main_banner {padding: 60px 0;}
+.main_ban_wp {padding: 0 115px 0 115px;}
+.main_banner .sec_title {position: absolute;top: 17px;left: 85px;}
+.main_ban_sd .item {padding: 0 10px;}
+.main_ban_sd .item a{display:block;height: 70px; text-align:center;border:1px solid rgba(39, 39, 96, .2);}
+.main_ban_sd .item a img {display:inline-block;height:100%;}
+.main_sec07 .item a:hover{border:1px solid #272760;}
+.main_ban_wp .slick-controls {position:absolute;right:0;top: 5px;z-index:50;}

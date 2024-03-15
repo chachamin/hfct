@@ -23,3 +23,11 @@ src: url(font/NanumSquareNeo-Bd.woff2) format("woff2"),
 url(font/NanumSquareNeo-Bd.woff) format("woff");
 }
 
+@font-face
+{font-family: "NanumNeo";
+font-style: normal;
+font-weight: 700;
+src: url(font/NanumSquareNeo-Eb.woff2) format("woff2"),
+url(font/NanumSquareNeo-Eb.woff) format("woff");
+}
+
