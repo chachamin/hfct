@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="KOR/css/common.css" />
     <link rel="stylesheet" type="text/css" href="KOR/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="KOR/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="KOR/css/content.css" />
     <script src="js/jquery.min.js"></script>
     <script src="KOR/js/common.js"></script>
     <script src="js/slick.js"></script>
@@ -249,7 +250,7 @@
                                 <div class="breadcrumb">
                                     <ul class="dp_flex">
                                         <li class="home"><a href="/">홈</a></li>
-                                        <li><a href="/contents.do?S=S01&amp;M=0101000000">정신건강정보</a></li> <li><a href="">우울</a></li>
+                                        <li><a href="#none">재단소개</a></li> <li><a href="">오시는길</a></li>
                                     </ul>
                                 </div>
                                 <ul class="screen_unit dp_flex">
@@ -261,11 +262,64 @@
                             </div>
                         </div>
                         <div id="sub_area">
-                            <div class="no_cont">
-                                <div class="no_ico"></div>
-                                <div class="text_box">
-                                    <div class="t1">콘텐츠 준비중입니다.</div>
-                                    <div class="t2">빠른 시일 내에 서비스를 제공할 수 있도록 노력하겠습니다.</div>
+                            <div class="location">
+                                <div class="loac_top dp_flex sec">
+                                    <div class="l_box">
+                                        <div class="h4 fw_3">화순군문화관광재단</div>
+                                        <div class="stit_2 gray500">전남 화순군 능주면 죽수길 73 (동헌) (우)58153</div>
+                                        <ul class="tit_list">
+                                            <li><span class="tit">대표번호</span><span class="text">061-373-5482</span></li>
+                                            <li><span class="tit">이메일</span><span class="text">hfct1106@naver.com</span></li>
+                                        </ul>
+                                        <div class="btn_wp">
+                                            <a href="https://kko.to/iKGMKYpDEK" class="btn bg_bk_bo" target="_blank" title="클릭시 새창열림">지도 크게보기</a>
+                                            <a href="https://kko.to/V0rYN4B9x7" class="btn bg_bk_bo" target="_blank" title="클릭시 새창열림">길찾기</a>
+                                        </div>
+                                    </div>
+                                    <div class="r_box">
+                                        <!-- * 카카오맵 - 지도퍼가기 -->
+                                        <!-- 1. 지도 노드 -->
+                                        <div id="daumRoughmapContainer1710727937462" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                                        <!-- 2. 설치 스크립트 -->
+                                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                                        <!-- 3. 실행 스크립트 -->
+                                        <script charset="UTF-8">
+                                            new daum.roughmap.Lander({
+                                                "timestamp" : "1710727937462",
+                                                "key" : "2ijxb",
+                                                "mapHeight" : "420"
+                                            }).render();
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="sec sec1">
+                                    <div class="subtit_1">교통 이용 안내</div>
+                                    <div class="con_box">
+                                        <table class="basic_tb top_b">
+                                            <caption>대중교통을 이용한 화순군문화관광재단 방문방법 안내</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>이용노선</th>
+                                                    <th>이용방법</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>버스</td>
+                                                    <td>218</td>
+                                                    <td>능주면사무소(능주초교방면), 능주면사무소(능주사거리방면) 하차 후 보도로 이동</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>버스</td>
+                                                    <td>지원152</td>
+                                                    <td>능주면사무소(능주초교방면), 능주면사무소(능주사거리방면) 하차 후 보도로 이동</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
