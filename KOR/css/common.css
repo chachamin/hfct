@@ -8,7 +8,7 @@
     font-style: normal;
 }
 /* reset */
-html {width:100%;overflow: hidden;}
+html {width:100%;}
 /* body {margin:0; padding:0; background:#fff; overflow-y:scroll; height:100%; width:100%; word-break:keep-all;} */
 body {margin:0; padding:0; background:#fff;height:100%; width:100%; word-break:keep-all;}
 body {font-family:"NanumNeo", "맑은고딕","Malgun Gothic", "NanumSquareNeo-Variable", "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo", "sans-serif"; -webkit-font-smoothing: antialiased; font-size:16px; font-weight:400; letter-spacing:0.05em; color:#272760; line-height:1.5;}

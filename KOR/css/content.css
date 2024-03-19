@@ -42,3 +42,7 @@
 /* 서브내용 */
 .sub_p_wp * + *{margin-top:1.5rem}
 
+/* 오시는길 */
+.location .loac_top {border: 1px solid #ddd;}
+
+
