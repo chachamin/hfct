@@ -176,6 +176,30 @@ $(document).ready(function () {
 		}
 	});
 
+	//  -------------------------- 서브메뉴 --------------------------
+	// $('.snb_list > li').hover(function() {
+	// 	$('.snb_dep3_list', this).stop().slideDown();
+	// }, function() {
+	// 	$('.snb_dep3_list', this).stop().slideUp();
+	// });
+
+	//  -------------------------- 서브메뉴 --------------------------
+	$('.snb_list > li').mouseenter(function() {
+		if($(this).hasClass('on')) {
+			$('.snb_dep3_list', this).css('display','block')
+		}else{
+			$('.snb_dep3_list', this).stop().slideDown();
+		}
+	});
+
+	$('.snb_list > li').mouseleave(function() {
+		if($(this).hasClass('on')) {
+			$('.snb_dep3_list', this).css('display','block')
+		}else{
+			$('.snb_dep3_list', this).stop().slideUp();
+		}
+	});
+
 	// -------------------------- gotop top bottom --------------------------
 
 	$(".loca_nav .top").click(function () {
