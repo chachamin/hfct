@@ -24,10 +24,10 @@
 .in_wp{position:relative;}
 
 /* 타이틀 */
-.subtit_1{position:relative;padding-top:16px;margin-bottom:24px;font-size:1.75rem;font-weight:700;}
+.subtit_1{position:relative;padding-top:16px;margin-bottom:24px;font-size:1.75rem;font-weight:600;}
 
-.subtit_2{position:relative;margin:16px 0;font-size:1.5rem;font-weight:700;color:#344054}
-.subtit_2-1{position:relative;margin-bottom:24px;padding-left:28px;font-size:1.75rem;font-weight:700;}
+.subtit_2{position:relative;margin:16px 0;font-size:1.5rem;font-weight:600;color:#344054}
+.subtit_2-1{position:relative;margin-bottom:24px;padding-left:28px;font-size:1.75rem;font-weight:600;}
 .subtit_2-1:before{content:'';position:absolute;top:9px;left:0;width:18px;height:18px;background:url("/_KOR/img/bul_1.png") 0px 0px no-repeat;}
 
 .subtit_3{position:relative;margin:16px 0;font-size:1.25rem;line-height:1.75rem;font-weight:700;color:#344054}
@@ -43,6 +43,22 @@
 .sub_p_wp * + *{margin-top:1.5rem}
 
 /* 오시는길 */
-.location .loac_top {border: 1px solid #ddd;}
+.location .loca_top {border:1px solid #E2E4E9;overflow:hidden;}
+.location .loca_top .l_box{width:35%;padding:60px 40px;}
+.location .loca_top .l_box .stit_2 {margin:16px 0 32px}
+.location .loca_top .l_box li + li{margin-top:12px;}
+.location .loca_top .l_box li .tit{min-width:70px}
+.location .loca_top .l_box .btn_wp{margin-top:32px}
+.location .loca_top .r_box{width:65%;}
+.location .loca_top .r_box > div{width:100%;}
+.location .loca_top .root_daum_roughmap .wrap_btn_zoom button{height:34px}
+.location .sec1 .bg_box{padding:4px 8px;margin-right:8px;border-radius:6px;}
+.location .sec1  li + li{margin-left:12px;}
+
+.basic_tb {border-top: 1px solid #000;margin: 14px 0;text-align: center;}
+.basic_tb thead th {padding: 20px 10px;border: solid #e3e3e3;border-width: 1px 0;text-align: center;border-top: 1px solid #000;}
+.basic_tb tbody td, .basic_tb tbody th {padding: 20px 12px;border: solid #e3e3e3;border-width: 1px 0;}
+
+
 
 

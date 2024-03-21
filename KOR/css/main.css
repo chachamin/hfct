@@ -71,7 +71,7 @@
 .main_pro .pro_list {justify-content: center;}
 .main_pro .pro_list.col_4 li {width: 22%;}
 .main_pro .pro_list.col_4 li a {padding: 0 36px;}
-.pro_list .con_box.gal_type .text_box {min-height: 240px;border-bottom: 4px solid #272760;}
+.pro_list .con_box.gal_type .text_box {min-height: 220px;border-bottom: 4px solid #272760;}
 
 /* 뉴스레터 */
 .main_newsletter {margin-top: 120px;}
