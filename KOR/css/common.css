@@ -27,7 +27,7 @@ address, caption, pre, em, i {font-style:normal;}
 
 table{width:100%;border-collapse:collapse;border-spacing:0;}
 table caption,legend{height:0;width:0;overflow:hidden;font-size:0;}
-table, caption, tbody, tfoot, thead, tr, th, td {background:transparent;font-siez:100%;}
+table, caption, tbody, tfoot, thead, tr, th, td {background:transparent;font-size:100%;}
 th,td{vertical-align:middle}
 
 blockquote, q {quotes:none;}
