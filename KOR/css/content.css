@@ -60,10 +60,10 @@
 .basic_tb tbody td, .basic_tb tbody th {padding: 20px 12px;border: solid #e3e3e3;border-width: 1px 0;}
 
 /* 재단일정 - 리스트(달력) */
-.calendarWrap {position: relative;}
-.calendarWrap .cal_hfct {display: flex;position: relative;}
-.calendarWrap .cal_tb_wp {width: 640px;padding: 0 40px;;position: relative;}
-.calendarWrap .cal_tb_wp .stickyWrap{position: sticky;top: 120px;}
+/* .calendarWrap {position: relative;} */
+.calendarWrap .cal_hfct {display: flex;justify-content: center;}
+.calendarWrap .cal_tb_wp {width: 640px;padding: 0 40px;}
+/* .calendarWrap .cal_tb_wp .stickyWrap{position: sticky;top: 120px;} */
 .calendarWrap .calendarDay {display: flex;align-items: center;justify-content: space-between;margin-bottom: 40px;padding: 0 30px;}
 .calendarWrap .calendarDay p {display: inline-block;font-size: 1.75rem;font-weight: 600;}
 
@@ -83,7 +83,25 @@
 .calendarWrap .calenderTable td p.sun {color:#e91313;}
 .calendarWrap .calenderTable td p.sat {color:#1355e9;}
 
-.calendarWrap .cal_eve_wp {width: calc(100% - 640px);padding: 0 0 0 80px;}
+.calendarWrap .cal_eve_wp {width: 520px;padding: 0 0 30px 80px;max-height:700px;overflow-y: scroll;}
+
+.calendarWrap .cal_eve_wp::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+/* 스크롤바 막대 설정*/
+.calendarWrap .cal_eve_wp::-webkit-scrollbar-thumb {
+    /* height: 20%;  */
+    /* 스크롤바의 길이 */
+    background: rgba(12, 255, 255, .25); /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+/* 스크롤바 뒷 배경 설정*/
+.calendarWrap .cal_eve_wp::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+
+
 .calendarWrap .cal_eve_tit {padding-left: 25px;font-size: 1.75rem;font-weight: 600;margin-bottom: 40px;}
 .calendarWrap .cal_eve_tit span {font-weight: 600;}
 .cal_eve_list li {width: 400px;display:none;padding: 20px;box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);}
@@ -99,6 +117,8 @@
 .cal_eve_list li .btn_box .btn_more:hover::after {opacity: 1;}
 .cal_eve_list li + li {margin-top: 40px;}
 
+
+/* 재단일정 - 뷰 */
 .pro_view_wp .view_hd .img_box {padding: 20px;box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);width: 440px;}
 .pro_view_wp .view_hd .text_box {padding-left: 70px;}
 .pro_view_wp .view_hd .tag span{padding: 5px 10px;background: #272760;color: #fff;font-size: 0.75rem;border-radius: 3px;}
