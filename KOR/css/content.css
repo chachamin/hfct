@@ -83,13 +83,14 @@
 .calendarWrap .calenderTable td p.sun {color:#e91313;}
 .calendarWrap .calenderTable td p.sat {color:#1355e9;}
 
-.calendarWrap .cal_eve_wp {width: 520px;padding: 0 0 30px 80px;max-height:700px;overflow-y: scroll;}
+.calendarWrap .cal_eve_wp {width: 520px;padding: 0 0 30px 50px;}
 
-.calendarWrap .cal_eve_wp::-webkit-scrollbar {
+.calendarWrap .cal_eve_wp .scroll_wrap {max-height:700px;overflow-y: scroll;padding-left: 30px;}
+.calendarWrap .cal_eve_wp .scroll_wrap::-webkit-scrollbar {
     width: 8px;  /* 스크롤바의 너비 */
 }
 /* 스크롤바 막대 설정*/
-.calendarWrap .cal_eve_wp::-webkit-scrollbar-thumb {
+.calendarWrap .cal_eve_wp .scroll_wrap::-webkit-scrollbar-thumb {
     /* height: 20%;  */
     /* 스크롤바의 길이 */
     background: rgba(12, 255, 255, .25); /* 스크롤바의 색상 */
@@ -97,7 +98,7 @@
 }
 
 /* 스크롤바 뒷 배경 설정*/
-.calendarWrap .cal_eve_wp::-webkit-scrollbar-track {
+.calendarWrap .cal_eve_wp .scroll_wrap::-webkit-scrollbar-track {
     background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
 }
 
