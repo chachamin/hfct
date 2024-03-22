@@ -282,6 +282,12 @@ $(document).ready(function () {
 		$mapBox.find(' > .img_list > div').eq($index).addClass('active');
 	});
 
+	$('.calenderTable a').click(function() {
+		$(this).parent().addClass('pick');
+		$(this).parents().siblings().removeClass('pick')
+		$('.cal_eve_list > li').css('display', 'block')
+	})
+
 
 });
 

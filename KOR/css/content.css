@@ -59,6 +59,54 @@
 .basic_tb thead th {padding: 20px 10px;border: solid #e3e3e3;border-width: 1px 0;text-align: center;border-top: 1px solid #000;}
 .basic_tb tbody td, .basic_tb tbody th {padding: 20px 12px;border: solid #e3e3e3;border-width: 1px 0;}
 
+/* 재단일정 - 리스트(달력) */
+.calendarWrap {position: relative;}
+.calendarWrap .cal_hfct {display: flex;position: relative;}
+.calendarWrap .cal_tb_wp {width: 640px;padding: 0 40px;;position: relative;}
+.calendarWrap .cal_tb_wp .stickyWrap{position: sticky;top: 120px;}
+.calendarWrap .calendarDay {display: flex;align-items: center;justify-content: space-between;margin-bottom: 40px;padding: 0 30px;}
+.calendarWrap .calendarDay p {display: inline-block;font-size: 1.75rem;font-weight: 600;}
+
+.calendarWrap .calenderTable{table-layout:fixed;}
+.calendarWrap .calenderTable th{padding:1rem;font-size:1.1rem;color:#333;font-weight:600;text-align:center;}
+.calendarWrap .calenderTable th.sun{color:#e91313;}
+.calendarWrap .calenderTable th.sat{color:#1355e9;}
+.calendarWrap .calenderTable td{height:60px;}
+
+.calendarWrap .calenderTable td a {width: 100%;height: 100%;display: inline-flex;align-items: center;justify-content: center;}
+.calendarWrap .calenderTable td a:hover{background:rgba(12, 255, 255, .25);}
+.calendarWrap .calenderTable td a:hover p {font-weight: 700;}
+.calendarWrap .calenderTable td.pick a {background:rgba(12, 255, 255, .25);}
+.calendarWrap .calenderTable td.pick a p {font-weight: 700;}
+.calendarWrap .calenderTable td > p{position:relative;}
+.calendarWrap .calenderTable td > p span{width:20px;height:20px;background:#f4f4f4;border-radius:50%;text-align:center;line-height:20px;color:#666;font-size:.875em;font-weight:500;}
+.calendarWrap .calenderTable td p.sun {color:#e91313;}
+.calendarWrap .calenderTable td p.sat {color:#1355e9;}
+
+.calendarWrap .cal_eve_wp {width: calc(100% - 640px);padding: 0 0 0 80px;}
+.calendarWrap .cal_eve_tit {padding-left: 25px;font-size: 1.75rem;font-weight: 600;margin-bottom: 40px;}
+.calendarWrap .cal_eve_tit span {font-weight: 600;}
+.cal_eve_list li {width: 400px;display:none;padding: 20px;box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);}
+.cal_eve_list li .img_box {max-height:500px;overflow: hidden;}
+.cal_eve_list li .text_box {padding: 16px;}
+.cal_eve_list li .text_box .t1 {font-size: 0.875rem;}
+.cal_eve_list li .text_box .t2 {border-bottom:1px solid #D9D9D9;font-size: 1.25rem;font-weight: 600;padding-bottom: 10px;}
+.cal_eve_list li .text_box .t3{padding-top: 16px;}
+.cal_eve_list li .btn_box {padding: 16px;}
+.cal_eve_list li .btn_box .btn_more {border: 1px solid rgba(39, 39, 96, .2);padding: 10px 0;width: 100%;text-align: center;transition: all 0.3s linear;position: relative;display: block;}
+.cal_eve_list li .btn_box .btn_more::after {content: '';display: block;width: calc(100% - 2px);height: 100%;border: 1px solid #272760;position: absolute;top: 0px;opacity: 0;transition: all 0.3s linear;}
+.cal_eve_list li .btn_box .btn_more:hover {border: 1px solid rgba(39, 39, 96, 1);}
+.cal_eve_list li .btn_box .btn_more:hover::after {opacity: 1;}
+.cal_eve_list li + li {margin-top: 40px;}
+
+.pro_view_wp .view_hd .img_box {padding: 20px;box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);width: 440px;}
+.pro_view_wp .view_hd .text_box {padding-left: 70px;}
+.pro_view_wp .view_hd .tag span{padding: 5px 10px;background: #272760;color: #fff;font-size: 0.75rem;border-radius: 3px;}
+.pro_view_wp .view_hd .pro_tit {font-size: 1.75rem;font-weight: 600;padding: 10px 0 40px;}
+.pro_view_wp .view_hd .info li {display: flex;}
+.pro_view_wp .view_hd .info li > div {padding: 7px 10px;}
+.pro_view_wp .view_hd .info .tit {min-width: 110px;background: #f2f2f2;margin-right: 16px;}
+
 
 
 

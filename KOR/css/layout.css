@@ -3,7 +3,7 @@
 /*------------------------------------*\
 기본 레이아웃
 \*------------------------------------*/
-#wrapper {width: 100%;overflow: hidden}
+#wrapper {width: 100%;}
 .inner {position: relative;padding: 0 85px;}
 .in_wrap {max-width: 1540px;width: 100%;}
 
@@ -416,7 +416,8 @@
 #content_wrap .in_wrap {padding:0 30px;}
 
 /* #snb */
-#snb{width:calc((100% / 6) - (50px * 10 / 12));margin-right:50px;padding-right:20px;max-width:250px;}
+#snb{width:calc((100% / 6) - (50px * 10 / 12));margin-right:50px;padding-right:20px;max-width:250px;position: relative;}
+#snb .stickyWrap {position: sticky;top: 120px;padding-bottom: 120px;}
 #snb .snb_list{text-align: center;}
 /* #snb .snb_list > li{} */
 #snb .snb_list > li > a{display:block;height:56px;line-height:56px;position: relative;border-bottom:1px solid #ddd;}
