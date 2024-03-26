@@ -43,14 +43,23 @@
 .sub_p_wp * + *{margin-top:1.5rem}
 
 /* 오시는길 */
-.location .loca_top {border:1px solid #E2E4E9;overflow:hidden;}
-.location .loca_top .l_box{width:35%;padding:60px 40px;}
+.location .loca_top {border-bottom:1px solid #E2E4E9;position: relative;}
+.location .loca_top .map_wp  > div{width:100%;}
+/* .location .loca_top .l_box{width:35%;padding:60px 40px;}
 .location .loca_top .l_box .stit_2 {margin:16px 0 32px}
 .location .loca_top .l_box li + li{margin-top:12px;}
 .location .loca_top .l_box li .tit{min-width:70px}
 .location .loca_top .l_box .btn_wp{margin-top:32px}
 .location .loca_top .r_box{width:65%;}
-.location .loca_top .r_box > div{width:100%;}
+.location .loca_top .r_box > div{width:100%;} */
+.location .loca_top .float_box {padding: 15px 20px;position: absolute;left: 0;bottom: -30px;z-index: 10;background: #fff;box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);}
+.location .loca_top .float_box li {position: relative;display: flex;align-items: center;justify-content: center;}
+.location .loca_top .float_box li::after {content: '';display: block;width: 1px;height: 20px;background-color: #E2E4E9;position: absolute;top: 2px;right: -15px;}
+.location .loca_top .float_box li:last-child::after {display: none;}
+.location .loca_top .float_box li + li{margin-left:30px}
+.location .loca_top .float_box li span {width: 16px;height: 16px;background: url(../img/loca_ico01.png) no-repeat center;margin-right: 5px;}
+.location .loca_top .float_box li:nth-child(2) span {background: url(../img/loca_ico02.png) no-repeat center;}
+
 .location .loca_top .root_daum_roughmap .wrap_btn_zoom button{height:34px}
 .location .sec1 .bg_box{padding:4px 8px;margin-right:8px;border-radius:6px;}
 .location .sec1  li + li{margin-left:12px;}
@@ -105,6 +114,7 @@
 
 .calendarWrap .cal_eve_tit {padding-left: 25px;font-size: 1.75rem;font-weight: 600;margin-bottom: 40px;}
 .calendarWrap .cal_eve_tit span {font-weight: 600;}
+.cal_eve_list  {padding-bottom: 30px;}
 .cal_eve_list li {width: 400px;display:none;padding: 20px;box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);}
 .cal_eve_list li .img_box {max-height:500px;overflow: hidden;}
 .cal_eve_list li .text_box {padding: 16px;}
@@ -123,11 +133,29 @@
 .pro_view_wp .view_hd .img_box {padding: 20px;box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);width: 440px;}
 .pro_view_wp .view_hd .text_box {padding-left: 70px;}
 .pro_view_wp .view_hd .tag span{padding: 5px 10px;background: #272760;color: #fff;font-size: 0.75rem;border-radius: 3px;}
-.pro_view_wp .view_hd .pro_tit {font-size: 1.75rem;font-weight: 600;padding: 10px 0 40px;}
+.pro_view_wp .view_hd .pro_tit {font-size: 1.75rem;font-weight: 600;padding: 10px 0 20px;}
+.pro_view_wp .view_hd .cont {padding-bottom: 30px;}
 .pro_view_wp .view_hd .info li {display: flex;}
 .pro_view_wp .view_hd .info li > div {padding: 7px 10px;}
-.pro_view_wp .view_hd .info .tit {min-width: 110px;background: #f2f2f2;margin-right: 16px;}
+.pro_view_wp .view_hd .info .tit {min-width: 110px;background: rgba(39, 39, 96, .05);margin-right: 16px;}
+.pro_view_wp .view_hd .info .file_dw {padding-right: 30px;position: relative;}
+.pro_view_wp .view_hd .info .file_dw::after {content: '';display: block;width: 24px;height: 24px;position: absolute;top: 0;right: 0;background: url(../img/file_dw.png) no-repeat center rgba(39, 39, 96, .05);border: 1px solid rgba(39, 39, 96, .1);}
 
+.pro_view_wp .view_hd .info .txt a + a {margin-left: 10px;}
+
+
+.bo_btn {padding: 50px 0 0;}
+.bo_btn a {font-weight: 600;}
+.bo_btn .bg_lred {color: #fff;}
+
+/* 재단일정 - 폼 */
+.required {position: relative;font-size: 0;width: 14px;height: 14px;line-height: 16px;}
+.required:before {content: '＊';position: absolute;top: -2px;left: 0;width: 14px;height: 14px;display: block;color: #e91313;font-size: 1rem;font-weight: 700;}
+.bo_form_tb {margin: 14px 0;}
+.bo_form_tb th {padding: 10px;text-align: center;background: rgba(39, 39, 96, .05);}
+.bo_form_tb td {padding: 10px 0 10px 15px;}
+.bo_form_tb .add_file li + li {margin-top:5px}
+.bo_form_tb .ev_content {min-height: 250px;}
 
 
 
