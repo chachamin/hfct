@@ -48,7 +48,7 @@ input[type='checkbox']{-webkit-appearance:checkbox}
 input[type='radio']{-webkit-appearance:radio;vertical-align:top}
 textarea {resize:none;border-radius:8px;}
 select {border-radius:8px;}
-select {padding:8px 24px 8px 12px;-webkit-padding-end:24px;-moz-padding-end:24px;background:url('/_KOR/img/select_arrow.svg') no-repeat right 11px center #fff;-webkit-appearance:none;-moz-appearance:none;cursor:pointer;min-width:72px;}
+select {padding:8px 24px 8px 12px;-webkit-padding-end:24px;-moz-padding-end:24px;background:url('/KOR/img/select_arrow.png') no-repeat right 11px center #fff;-webkit-appearance:none;-moz-appearance:none;cursor:pointer;min-width:110px;}
 select::-ms-expand {display: none;}
 textarea {resize:none;}
 button, label,input[type='submit'],input[type='button'],input[type="radio"]:hover,input[type="checkbox"]:hover {cursor:pointer;}
@@ -279,6 +279,8 @@ ul.ulfl > li{float:left}
 .gray700{color:#344054 !important;}
 .gray600{color:#475467 !important;}
 .gray500{color:#667085 !important;}
+.main_blue{color:#272760 !important;}
+.neon_green{color:#0CFFE1 !important;}
 
 /* 배경 */
 .bg_bk{background-color:#1D2939 !important; color:#fff !important}

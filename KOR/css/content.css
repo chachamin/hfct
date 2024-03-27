@@ -158,4 +158,77 @@
 .bo_form_tb .ev_content {min-height: 250px;}
 
 
+/* 게시판 - 검색 */
+.board_search {justify-content: space-between;align-items: center;}
+.board_search .search_form {display: flex;}
+.board_search .search_form input {border-radius: 0;}
+.board_search .search_form select {border-radius: 0;}
+.board_search .search_form button {border-radius: 0;}
+.board_search .search_form .search_input_wrap {margin-left: 10px;}
+
+/* 문화예술행사 - 리스트 */
+.pg_list_wp {padding-top: 20px;}
+.pg_list {display: flex;flex-wrap: wrap;margin: -8px -16px 0;}
+.pg_list > li {position: relative; width: calc((100% - 64px) / 2);margin: 16px;border: 2px solid transparent;transition: all .2s ease-in-out;overflow: hidden;box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);}
+.pg_list > li:hover {border: 2px solid #0cffe1;box-shadow: 0 8px 24px 0 rgba(12, 255, 255, 0.1);}
+.pg_list > li > a {display: block;padding: 20px;width: 100%;transition: all 0.5s ease;}
+.pg_list .in_box .img_box {width: 250px;}
+.pg_list .in_box .cont {width: calc(100% - 250px);padding-left: 20px;}
+.pg_list .cont .attach .tag{padding: 5px 10px;background: #272760;color: #fff;font-size: 0.75rem;border-radius: 3px;}
+.pg_list .cont .pg_tit {font-size: 1.75rem;font-weight: 600;padding: 10px 0 20px;}
+.pg_list .cont .info_list li {padding-right: 10px;}
+.pg_list .cont .info_list li + li {margin-top: 5px;}
+.pg_list .cont .info_list span {font-size:0.938rem}
+.pg_list .cont .info_list span.tit {margin-right: 5px;font-weight: 600;padding-right: 7px;position: relative;}
+.pg_list .cont .info_list span.tit::after {content: '';display: block;width: 1px;height: 12px;background: rgba(39, 39, 96, .5);position: absolute;top: 5px;right: 0;}
+
+/* 문화예술행사 - 뷰 */
+.view_bd {margin-top: 40px;border-top: 1px solid rgba(39, 39, 96, .5);border-bottom: 1px solid rgba(39, 39, 96, .5);padding-bottom: 30px}
+
+.bo_form_tb .pg_content {min-height: 250px;}
+.bo_form_tb .pg_short_txt {min-height: 90px;}
+
+
+
+/* 페이징 */
+.pagination {padding-top: 50px;}
+.pagination > ul {justify-content: center;}
+.pagination li + li {margin-left: 4px;}
+.pagination a {display: inline-block;vertical-align: middle;text-align: center;line-height: 40px;width: 40px;height: 40px;font-weight: 600;border: 1px solid #E2E4E9;}
+.pagination .ico{font-size:0;background:url('../img/bo_pg_ir.png') no-repeat 10px 10px #f6f8fa;border:0}
+.pagination .ico.prev{background-position:-18px 10px}
+.pagination .ico.next{background-position:-56px 10px}
+.pagination .ico.last{background-position:-85px 10px}
+.pagination a.active{background:#272760;color:#fff;font-weight:700;border-color:#1D2939}
+.pagination a:not(.active):hover{background-color:#f0f0f0;}
+
+
+/* 프로그램 - 리스트 */
+.edu_list {display: flex;flex-wrap: wrap;margin: -8px -36px 0;}
+.edu_list > li {position: relative; width: calc((100% - 216px) / 3);margin: 36px;overflow: hidden;border-bottom: 2px solid #272760;padding-bottom: 30px;}
+.edu_list > li a {width: 100%;display: block;}
+.edu_list .img_box {position: relative;overflow: hidden;}
+.edu_list .img_box img {transition: all .3s;}
+.edu_list .img_box .state {color: #fff;min-width: 60px;font-size: 0.875rem;padding: 5px 0;position: absolute;top: 16px;right: 10px;text-align: center;border-radius: 4px;}
+.edu_list .img_box .state.st1 {background: #039855;}
+.edu_list .img_box .state.st2 {background: #333;}
+
+.edu_list .cont {margin-top: 35px;padding-left: 16px;}
+.edu_list .cont .tag {opacity: .7;font-size: 0.875rem;}
+.edu_list .cont .pg_tit {font-size: 1.563rem;}
+.edu_list .cont .pg_tit {background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(rgba(12, 255, 255, .25), rgba(12, 255, 255, .25));background-size: 100% 15px, 0 15px;background-position: 100% 100%, 0 100%;background-repeat: no-repeat;transition: background-size 0.3s linear;display: inline;}
+.edu_list .cont .t3 {font-size: 1rem;}
+.edu_list a:hover img {transform: scale(1.1);}
+.edu_list a:hover .pg_tit {background-size: 0 15px, 100% 15px;}
+
+
+
+
+
+
+
+
+
+
+
 
