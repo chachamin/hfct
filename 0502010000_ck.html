@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="KOR/css/common.css" />
     <link rel="stylesheet" type="text/css" href="KOR/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="KOR/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="KOR/css/board.css" />
     <script src="js/jquery.min.js"></script>
     <script src="KOR/js/common.js"></script>
     <script src="js/slick.js"></script>
@@ -261,66 +262,95 @@
                             </div>
                         </div>
                         <div id="sub_area">
-                                <div class="tab_box">
-                                    <ul class="tab_nav">
-                                        <li><a href="#">전체</a></li>
-                                        <li><a href="#">진행중</a></li>
-                                        <li class="on"><a href="#">종료</a></li>
-                                    </ul>
+                            <div class="log_wrap">
+                                <div class="text_box">
+                                    <p class="tit"><span class="fw_2">화순군문화관광재단</span> 홈페이지에 오신 것을 환영합니다.</p>
+                                    <p>원활한 서비스 이용을 위하여 <span class="fw_2">수강신청에 사용한 연락처</span>를 입력해주세요.</p>
                                 </div>
-                                <div class="edu_list_wp">
-                                    <ul class="edu_list">
-                                        <li class="item">
-                                            <div class="img_box">
-                                                <img src="/KOR/img/test_01.png" title="">
-                                            </div>
-                                            <div class="cont">
-                                                <div class="attach"><span class="pro_tp">사업공고</span><span class="st1">진행중</span></div>
-                                                <div class="pg_tit"><a href="#none">우당탕탕 인턴십:도슨트 체험</a></div>
-                                                <div class="info_list_wp">
-                                                    <ul class="info_list">
-                                                        <li>
-                                                            <span class="tit">접수기간</span>
-                                                            <span class="txt">2024-03-25 ~ 2024-04-09</span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="tit">교육일시</span>
-                                                            <span class="txt">2024-04-16 ~ 2024-04-20</span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="tit">교육장소</span>
-                                                            <span class="txt">화순군립 운주사문화관</span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="tit">참여대상</span>
-                                                            <span class="txt">화순군에서 거주하거나 생활하는 군민</span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="tit">주최</span>
-                                                            <span class="txt">화순군문화관광재단</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="btn_box">
-                                                <a href="#none" class="btn bg_bk_bo">자세히보기</a>
-                                            </div>
-                                        </li>
+                                <div class="log_wp">
+                                    <div class="input">
+                                        <input type="tel" name="phone" class="input_field" placeholder="010-0000-0000" title="연락처 입력" id="pg_fomr_5">	
+                                    </div>
+                                    <div class="log_btn">
+                                        <input type="submit" class="app_log" onclick="" onkeypress="" title="로그인" value="수강신청 확인">
+                                    </div>
+                                </div>
+                                <div class="login_noti">
+                                    <p class="ico_excl">수강신청 확인 및 취소는 어떻게 할 수 있나요?</p>
+                                    <p class="add_dot">수강신청에 사용하신 연락처를 입력 하신 후 수강신청 내역을 확인할 수 있습니다.</p>
+                                    <p class="add_dot">수강신에 대한 자세한 문의는 061)373-5482 로 가능합니다.</p>
+                                </div>
+                            </div>
 
-                                    </ul>
+                            <div class="my_edu">
+                                <div class="subtit_1">나의 프로그램</div>
+                                <div class="edu_count">
+                                    <p>전체 <span class="red fw_2">0건</span>의 신청내역이 있습니다.</p>
                                 </div>
-                                <div class="pagination">
-                                    <ul class="dp_flex">
-                                        <li><a href="#none" class="ico first" title="처음페이지"></a></li>
-                                        <li><a href="#none" class="ico prev" title="이전페이지"></a></li>
-                                        <li><a href="#none" class="active">1</a></li>
-                                        <li><a href="#none">2</a></li>
-                                        <li><a href="#none">3</a></li>
-                                        <li><a href="#none">4</a></li>
-                                        <li><a href="#none">5</a></li>
-                                        <li><a href="#none" class="ico next" title="다음페이지"></a></li>
-                                        <li><a href="#none" class="ico last" title="마지막페이지"></a></li>
-                                    </ul>
+                                <div class="my_edu_list">
+                                    <table class="bo_table">
+                                        <caption>프로그램신청 내역을 제공합니다.</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>번호</th>
+                                                <th>프로그램명</th>
+                                                <th>교육일시</th>
+                                                <th>신청일시</th>
+                                                <th>신청상태</th>
+                                                <th>비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="num">1</td>
+                                                <td class="edu_tit">
+                                                    <a target="_top" href="#noene" title="SF란 무엇인가">SF란 무엇인가</a>
+                                                </td>
+                                                <td class="edu_period">2024-04-01 ~ 2024-04-05</td>	
+                                                <td class="app_day">2024-03-28</td>
+                                                <td class="state"><span class="aps_1">접수중</span></td>
+                                                <td class="re_btn">
+                                                    <a href="#none">취소신청</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">2</td>
+                                                <td class="edu_tit">
+                                                    <a target="_top" href="#noene" title="SF란 무엇인가">SF란 무엇인가</a>
+                                                </td>
+                                                <td class="edu_period">2024-04-01 ~ 2024-04-05</td>	
+                                                <td class="app_day">2024-03-28</td>
+                                                <td class="state"><span class="aps_2">접수완료</span></td>
+                                                <td class="re_btn">
+                                                    <a href="#none">취소신청</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">3</td>
+                                                <td class="edu_tit">
+                                                    <a target="_top" href="#noene" title="SF란 무엇인가">SF란 무엇인가</a>
+                                                </td>
+                                                <td class="edu_period">2024-04-01 ~ 2024-04-05</td>	
+                                                <td class="app_day">2024-03-28</td>
+                                                <td class="state"><span class="aps_3">취소신청</span></td>
+                                                <td class="re_btn"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">4</td>
+                                                <td class="edu_tit">
+                                                    <a target="_top" href="#noene" title="SF란 무엇인가">SF란 무엇인가</a>
+                                                </td>
+                                                <td class="edu_period">2024-04-01 ~ 2024-04-05</td>	
+                                                <td class="app_day">2024-03-28</td>
+                                                <td class="state"><span class="aps_4">취소완료</span></td>
+                                                <td class="re_btn"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="6">신청한 프로그램이 없습니다.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- // : bo_table -->
                                 </div>
                             </div>
                         </div>
