@@ -39,7 +39,8 @@
 .main_sec .btn_box .btn_more:hover {border: 1px solid rgba(39, 39, 96, 1);}
 .main_sec .btn_box .btn_more:hover::after {opacity: 1;}
 
-.main_sec1 .right_wr {width: 100%; padding-left: 90px;justify-content: space-around;padding-top: 5rem;}
+.main_sec1 .right_wr {width: 100%; padding-left: 90px;padding-top: 5rem;}
+.main_sec1 .right_wr .dp_flex {justify-content: space-around;}
 .con_box.gal_type {width: 400px;}
 .con_box.gal_type a{display: block;}
 /* .con_box.gal_type a:hover {direction: ltr} */

@@ -210,3 +210,8 @@
 .bo_form_tb td {padding: 10px 0 10px 15px;}
 .bo_form_tb .add_file li + li {margin-top:5px}
 .bo_form_tb .ev_content {min-height: 250px;}
+
+/* 보도자료 - 뷰 */
+.bo_v_body.type_ho {display: flex;justify-content: space-between;}
+.bo_v_body.type_ho .text_box {width: calc(100% - 400px);}
+.bo_v_body.type_ho .img_box {width: 400px;}

@@ -1,4 +1,17 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 1930px) and (max-width: 2560px) {
+	.in_wrap {max-width: 1540px;width: 100%;margin: 0 auto;}
+	.main_container .section {width: 100%;height: auto;}
+}
+
+@media (max-width: 1700px){
+	.gnb_r {right: -55px;}
+	.global_quick {display:none;}
+	.moVer_quick {display:block;}
+	.loca_nav {bottom:120px;}
+}
+
 @media (max-width: 1700px){
 	.gnb_r {right: -55px;}
 	.global_quick {display:none;}
@@ -13,23 +26,26 @@
 	  -ms-text-size-adjust : none;  /* IE */
 	  -moz-text-size-adjust : none;  /* 파이어폭스 */
 	  -o-text-size-adjust : none;  /* 오페라 구버전 */
-	}		
+	}
 	.inner{width:100%;padding-right:1.25rem;padding-left:1.25rem; margin:0 auto; box-sizing:border-box}	
 	.loca_nav{right:16px;bottom:16px;}
 	#footer > .inner{padding-right:1.25rem;padding-left:1.25rem;}
 
-	
 	/* 기본 */
 	#header{height:80px;}
 	#header #mMenu{display:block;}
-	#gnb,.tnb{display:none;}	
+	#gnb,.tnb{display:none;}
 	#sub_area{word-break:break-all;}
 
 	.logo_area h1 {left:1.25rem;}
 
 	/* 메인 */
-	.main_sec2 .right_wr {padding-left:0;padding-top:4rem;}
+	.main_sec1 .right_wr {padding-left:0;padding-top:4rem;}
 	.main_business .con_box.gal_type .img_box {height:auto;}
+	.main_pro .pro_list.col_4 li a {padding: 0 16px;}
+	.main_newsletter .dp_flex {justify-content: end;}
+	.subscribe {margin-right: 9rem;}
+	.main_banner .sec_title {left: 1rem;}
 
 	/* 레이어팝업창 */
 	.layerpopup{max-width:98%}
@@ -39,7 +55,7 @@
 	.layer_pop_wp .layer_con{width:90%;padding-right:1.25rem;padding-left:1.25rem; margin:0 auto; box-sizing:border-box}	
 	.layer_pop_wp .layer_pop_close{right:20px}
 	.layer_pop_wp{padding:24px;}
-	.layer_pop_wp .layer_flex{width:100%}	
+	.layer_pop_wp .layer_flex{width:100%}
 }
 
 @media (max-width: 1200px){
@@ -47,33 +63,36 @@
 	#header{height:80px;}
 	.logo_area img{height:40px}
 	#header #mMenu{display:block;}
-	#gnb,.tnb{display:none;}	
+	#gnb,.tnb{display:none;}
 	#sub_area{word-break:break-all;}
-	
+
 	/* 메인 */
-	.main_sec1 .tab_cont > ul{flex-wrap:wrap;box-shadow:unset;}
-	.main_sec1 .tab_cont li{width:calc(50% - 8px);flex:unset;padding:12px 16px 0;border:1px solid #ddd;border-radius:8px !important;margin:4px;}
-	.main_sec1 .tab_cont li a{display:flex;flex-wrap:wrap;}
-	.main_sec1 .tab_cont .tag{height:24px;width:36px;padding:4px 8px;margin-bottom:0;}
-	.main_sec1 .bo_tit{width:calc(100% - 36px);padding-left:12px;height:3.2rem;}
-	.main_sec1 .tab_cont li a .date{position:relative;margin-top:2px;width:100%;padding-left:48px;}
-	.main_sec .sec_wp{flex-wrap: wrap;}
-	.main_sec3 .sec_wp > *{width:100%}
-	.main_sec3 .info_links{margin-top:40px}
-	
+	.main_vsual_wp.inner {padding-right: 0;padding-left: 0;}
+	.main_container .section {height: auto;}
+	.visual_wrap {height:auto;}
+	.main_v_sd .item {height: auto;}
+	.visual_wrap .slick-nav a {bottom:250px}
+
+	.main_container .section.adp_t {padding-top: 50px;}
+	.main_sec1 {padding: 0;}
+	.main_sec1 .left_wr {padding-left: 0;width: 360px;}
+	.main_sec1 .right_wr {width: calc(100% - 360px);}
+	.main_sec1 .right_wr .gal_type {width: 50%;padding: 0 16px;}
+
+	.main_pro .pro_list.col_4 li {width: 25%;}
+
 	/* 서브 */
 	#svisualLayout:before{left:-320px}
 	#svisualLayout:after{right:-320px}
-	
-	/* 정신건강정보 */
-	.sub_01.sub_0110 .sec4 .tit_listbox li{width:calc((100% - 48px) / 2);}
+
 }
 
 @media (max-width: 1140px){
 	/* 메인 */
-	.main_sec2 .sec_wp > *{width:calc((100% - 64px) / 4)}
-	.main_sec2 .sec_wp > *:last-child{width:100%;margin-top:40px}
-	.main_sec2 .main_gall_wp .item .img_box{height:166px;}
+	.main_sec2 {padding: 3.75rem 0 3.75rem;}
+	.main_business .con_box.gal_type a {padding: 0 16px;}
+	.main_newsletter {margin-top: 80px;}
+	.subscribe {padding: 40px 10px;}
 
 	/* 서브 */
 	.sec_leftbox{flex-wrap:wrap;}
@@ -82,77 +101,82 @@
 
 	.snb_0201_wp li{width: calc((100% - 32px) / 4);}
 	.sub0203 .top_box .step_ul li{width:calc((100% - 72px) / 3);}
-	
-	/* 센터소개 */
-	.greeting,.location .loca_top{flex-wrap:wrap;}
-	.greeting .l_box{padding-bottom:40px;background-position:right top}
-	.greeting > *{width:100% !important;}
-	.location .loca_top > *{width:50% !important;}	
-	.sitemap_list > li{width:calc((100% - 72px) / 3);}
 
-	.org_list{width:100%;}
-	.org_list .org_item{width:210px;padding:16px 8px;font-size:1rem;line-height:1.5rem;}
-	.org_list .org_st0{width:210px;height:210px}
-	.org_list:before{height:100%;}
-	.org_b ul:before{left:105px;width:calc(100% - 210px);}
-	.org_c{background:#fff;}
-	.org_c .org_item{margin-left:-105px;}
-	.org_list .org_item_s{padding:16px 8px;font-size:1rem;line-height:1.5rem;}
-
-	.mivision .sec3 .sec_col_s.col_5 > *{width:calc((100% - 48px) / 3);}
 
 }
 
 @media (max-width: 990px){
-	
+
 	/* 기본 */
-	#header{height:72px;}	
+	#header{height:72px;}
 	#header #mMenu{top:0}
 	.logo_area h1{padding-top:16px;}
 
-	/* 메인 */
-	.main_sec1 .tab_cont li{width:100%;padding:4px 12px}
-	.main_sec1 .tab_cont li a{align-items:center;}
-	.main_sec1 .bo_tit{width:calc(100% - 112px);-webkit-line-clamp:1;height:1.6rem;}
-	.main_sec1 .tab_cont li a .date{width:72px;margin-top:0;padding-left:0}
+	/* 푸터 */
+	.f_menu_wp {flex-wrap: wrap;}
+	.f_menu_wp .f_logo {margin-bottom: 25px;}
+	.f_menu_wp .f_logo img {height: 50px;}
+
 
 	/* 레이어팝업창 */
 	.layerpopup{width:96%;left:2% !important;}
-	
+
 	/* 서브기본 */
-	.table_wp {width: 100%;overflow-x:scroll;margin-bottom:30px}  
+	.table_wp {width: 100%;overflow-x:scroll;margin-bottom:30px}
 	.table_wp table {width:1020px;}
 	.table_wp .notice{display:block;padding:10px;background:#fff8f7;color:#f44336;border-radius:4px;margin-bottom:4px;} 
 	.table_wp table td,	.table_wp table th{word-break:break-all}
-	
+
 	#snb .snb{flex-wrap:wrap;}
 	#snb .snb li{flex:unset;width:calc(100% / 5);border-bottom: 1px solid #E2E4E9;}
 	#snb .snb li:nth-child(5n) a{border-right:0}
 	#snb .snb li:last-child a{border-right:1px solid #E2E4E9}
-	
-	.snb_dep3 ul{overflow-x:auto;white-space:nowrap;display:block;}	
+
+	.snb_dep3 ul{overflow-x:auto;white-space:nowrap;display:block;}
 	.snb_dep3 ul li{display:inline-block;}
-	
-	/* 서브 */	
+
+	/* 서브 */
 	.history .pg_tabcon,
 	.sub_01.sub_0102 .sec4 .sub0201_04_bg{background:none;}
 	.pg_tab{flex-wrap:wrap;}
-	.pg_tab a{margin-bottom:8px}	
+	.pg_tab a{margin-bottom:8px}
 
-	 
 }
 
 @media (max-width: 768px){
 	/* 기본 */
 	select,input{font-size:.875rem;margin-top:2px;margin-bottom:2px;}
-	select{min-width:42px;padding:8px 18px 8px 8px;background-position:right 5px center}	
+	select{min-width:42px;padding:8px 18px 8px 8px;background-position:right 5px center}
 	#footer .foot_bottom .foot_b_l,
 	#footer > .inner{flex-wrap:wrap}
 	#footer .foot_bottom .foot_b_l .txt_box{margin:16px 0 24px;margin-left:0;}
 
 	/* 메인 */
-	.main_event_wp .m_event{box-shadow:unset}
-	
+	.main_sec1 .in_wrap.dp_flex {flex-wrap: wrap;}
+	.main_sec1 .left_wr {width: 100%;max-width: 100%;}
+	.main_sec1 .right_wr {width: 100%;}
+	.main_business {overflow-x: scroll;}
+	.main_business .scl_x {width: 200%;}
+	.main_sec3 {padding-top: 0;}
+	.main_pro {overflow-x: scroll;}
+	.main_pro .pro_list {justify-content: start;width: 200%;}
+	.main_pro .pro_list.col_4 li {width: 25%;}
+
+	.main_business {padding-bottom: 15px;}
+	.main_business::-webkit-scrollbar {width: 5px; }
+	.main_business::-webkit-scrollbar-thumb {height: 5px;background: rgba(12, 255, 255, .25);border-radius: 3px;border: 5px solid #F4F6F8;}
+	.main_business::-webkit-scrollbar-track {background: #f6f8fb;}
+
+	.main_pro {padding-bottom: 15px;}
+	.main_pro::-webkit-scrollbar {width: 5px; }
+	.main_pro::-webkit-scrollbar-thumb {height: 5px;background: rgba(12, 255, 255, .25);border-radius: 3px;border: 5px solid #fbfbfb;}
+	.main_pro::-webkit-scrollbar-track {background: #fbfbfb;}
+
+	/*푸터*/
+	.f_menu_wp .fnb {width: 100%;}
+	.f_menu_wp .fnb_dep1 {justify-content: space-between;}
+	.f_menu_wp .fnb_dep1 > li {width: calc(100% / 6);margin-right: 1rem;}
+
 	/* 서브 */
 	#svisualLayout:before{left:-420px}
 	#svisualLayout:after{right:-480px}
@@ -167,32 +191,12 @@
 
 	.table_wp table {width:780px;}
 	.sitemap_list > li{width:calc((100% - 48px) / 2);}
-	
-	/* 정신건강정보 */
-	.sub_01 .sec_img{flex-wrap:wrap;}	
-	.sub_01 .sec_img .text_box{width:100%;padding-left:0;}
-	.sub_01 .sec_col > *,
-	.sub_01 .sec_img .img_box{width:100%}	
-	.sub_01 .sec_col_s.col_4 > *{width:calc((100% - 32px) / 2);}
 
-	/* 센터소개 */
-	.business_intro .row_step:before{left:50%}
-	.business_intro .row_step > li{padding-left:0;}
-	.business_intro .row_step > li .year{position:relative;left:50%;margin-left:-80px;margin-bottom:32px;}
-	.business_intro .row_step > li .step_con{overflow:hidden;}
-	.business_intro .row_step > li .step_con .tit{width:100%;padding:16px;}
-	.business_intro .row_step > li .step_con .con{width:100%}
-	.b_intro2.sec_col li,
-	.mivision .mivi_list > li .con,
-	.mivision .mivi_list > li.item_3 .sec_col > li,
-	.mivision .mivi_list > li.item_4 .sec_col > li{width:100%}
-	.mivision .mivi_list > li .tit{width:100%;margin-right:0}
-	.mivision .mivi_list > li.item_4 .img{margin-left:-20px;}
 }
 
 @media (max-width: 720px){
 	/* 기본 */
-	#footer .foot_top .inner{flex-wrap:wrap;}	
+	/* #footer .foot_top .inner{flex-wrap:wrap;}
 	#footer .foot_top .foot_t_l ul{flex-wrap:wrap;width:100%;justify-content: space-between;}
 	#footer .foot_t_l{width:100%;}
 	#footer .foot_top .foot_t_l ul > li{width:calc((100% - 24px) / 4);border:1px solid #91949b;border-radius:8px;}
@@ -200,12 +204,12 @@
 	#footer .foot_top .foot_t_l ul > li:not(:first-child):before{display:none;}
 	#footer .foot_top .foot_t_l ul > li a{display: flex;padding:12px 8px;margin:2px;text-align:center;word-break: break-all;align-items: center;justify-content: center;font-size:.875rem;height:100%;}
 	#footer .foot_top .related_site {margin-top:8px;width:100%}
-	#footer .related_site ul{width:100%}
+	#footer .related_site ul{width:100%} */
 
 	/* 메인 */
-	.main_v_sd .item{height:320px}
-	.main_sec1 .sec_wp .main_notice{width:100%;margin-right:0;}	
-	.main_sec1 .board_tabs > li{height:480px}
+	/* .main_v_sd .item{height:350px}
+	.main_v_sd .item img {width: 100%;height: 100%;} */
+
 
 	.main_sec1 .tab_cont li a{align-items:normal;padding:8px 0}
 	.main_sec1 .bo_tit{width: 100%;height:auto;margin:4px 0;font-size:1.05rem;line-height:1.4rem;padding: 0;}
@@ -228,52 +232,20 @@
 	#snb .snb a{height:48px;padding:6px 8px;font-size:0.938rem;line-height:1rem;word-break:break-word;}	
 	.snb_0201_wp li{width:calc((100% - 24px) / 3);}
 
-	/* 마음건강 */
-	.sub0203 .top_box{padding:32px 16px}
-	.sub0203 .top_box .step_ul li{width:100%;}
-	.sub0203 .top_box .step_ul li:not(:first-child):before{top:-24px;transform:rotate(90deg);left:50%;margin-top:0;margin-left:-12px}
-	.sub0203 .sec1 .box_gray{flex-wrap:wrap;padding:32px;justify-content: center;}
-	.sub0203 .sec1 .box_gray .gna_wp{width:100%;padding:0;}
-	.sub0203 .sec2 .box_line,.agencymap_wp .sec1{flex-wrap:wrap;}
-	.sub0203 .sec2 .box_line .r_box{width:100%;padding-left:0;margin-top:32px}
-
-	/* 정신건강기관 */
-	.agencymap_wp .sec1 .l_box{width:100%;padding:32px}
-	.agencymap_wp .sec1 .r_box{width:100%}
-	.agencymap_wp .sec1 .area_wp{transform: scale(.9);}
-
-	/* 정신건강통계 */	
-	.satis_wp > ul.sec_col.col_3 > li{width:100%;}
-	.satis_wp > ul.sec_col.col_3 > li.title_box{width:100%;order: -1;}
-	.satis_wp > ul > li .num{font-size:2.125rem}
-	.satis_wp > ul > li .btn{display:none;}
-	
-	/* 센터소개 */
-	.history .pg_tabcon .tit_year{width:100%;margin-bottom:32px;}
-	.history .pg_tabcon > ul{width:100%;margin-left:24px}
-	
-	.org_list .org_item{margin:16px auto 0;width:80%}
-	.org_list .dp_flex{flex-wrap:wrap;}
-	.org_list .dp_flex > *{width:100%}
-	.org_b ul:before,
-	.org_list .org_item_s:last-child:after,
-	.org_list .org_item_s:last-child:before,
-	.org_list .org_item_s:after,
-	.org_list .org_item_s:before{display:none;}
-	.org_b > ul{padding-top:0;}
-	.org_b ul li:nth-child(2){z-index:5}
-	.org_c > div{padding-top:0;width:50% !important;}
-	.org_c .org_item{left:10%;}
-	.org_c .org_c_r ul{padding-top:100px}
-	.org_list .org_item_s{flex:unset;max-width:unset;}
-
-	.location .loca_top > *{width:100% !important;}
 }
 
 @media (max-width: 620px){
+	/* 기본 */
+	.f_menu_wp .fnb {overflow: hidden;overflow-x: scroll;}
+	.f_menu_wp .fnb_dep1 {width: 200%;}
+
+	.f_menu_wp .fnb {padding-bottom: 15px;}
+	.f_menu_wp .fnb::-webkit-scrollbar {width: 5px; }
+	.f_menu_wp .fnb::-webkit-scrollbar-thumb {height: 5px;background: rgba(12, 255, 255, .25);border-radius: 3px;border: 5px solid #272760;}
+	.f_menu_wp .fnb::-webkit-scrollbar-track {background: #272760;}
+
 	/* 메인 */
-	.main_v_sd .item .mv_pc{display:none}
-	.main_v_sd .item .mv_m{display:flex;align-items:center;justify-content: center;}	
+	.main_container .section.adp_t {padding-top: 30px;}
 
 	/* 서브기본 */
 	#pg_satisfaction .user_opinion,
@@ -287,25 +259,6 @@
 	#snb .snb li:nth-child(3n) a{border-right:0}
 	#snb .snb li:nth-child(5n) a{border-right:1px solid #E2E4E9}
 
-	/* 정신건강정보 */
-	.sub_01.sub_0110 .sec4 .tit_listbox li{width:100%;}
-	
-	/* 마음건강 */
-	.sub0203 .sec2 .box_line{padding:24px !important}
-	.sub0203 .sec2 .box_line .item{width:100%}
-
-	/* 정신건강기관 */
-	.agency_ect table{table-layout: fixed;}
-	.agency_ect .sec_img{flex-wrap:wrap;padding:24px}
-	.layer_pop_wp .ltit_wp .tit,
-	.agency_ect .sec_img .text_box{width:100%;padding-left:0}
-
-	.layer_pop_wp .ltit_wp{flex-wrap:wrap;}
-	.layer_pop_wp .ltit_wp .tit{margin-top:12px}
-	
-	/* 센터소개 */
-	.greeting .l_box{background:none;}
-	.mivision .sec3 .sec_col_s.col_5 > *{width:calc((100% - 32px) / 2);}
 }
 
 @media (max-width: 540px){
@@ -326,13 +279,21 @@
 	.body_3{font-size:0.813rem;line-height:1.313rem;}/* 13px */
 
 	.caption{font-size:0.75rem;line-height:1.125rem;}/* 12px */
-	#footer .foot_top .foot_t_l ul > li{width:calc((100% - 8px) / 2);margin:2px}
+
+	.f_info_wp {padding-bottom: 70px;}
+	.f_info_wp .sns_box {right: auto;left: 0;}
 
 	/* 메인 */
-	.main_sec1 .sec_wp .main_event_wp .item{padding:0;}
-	.main_sec3 .map_wp .area_wp{position:relative;transform: scale(.8);}
-	.main_sec3 .info_links .links li a:before{transform: scale(.8);margin-left:-10%}
-	
+	.main_vsual_wp {padding-top: 75px;}
+	.visual_wrap .slick-nav a {bottom: 130px;}
+	.visual_wrap .slick-nav a.slick-prev, .visual_wrap .slick-nav a.slick-next {width: 40px;height: 40px;background-size: 100%;}
+	.main_newsletter .dp_flex {justify-content: center;}
+	.subscribe {margin-right: 0;}
+
+	.main_banner .sec_title {top: -45px;left: 28px;}
+	.main_banner {padding: 100px 0 60px;}
+	.main_ban_wp {padding: 0 115px 0 0px;}
+
 	/* 서브기본 */
 	#svisualLayout:before{left:-560px}
 	#svisualLayout:after{right:-600px}
@@ -344,52 +305,37 @@
 	.snb_0201_wp li{width:calc((100% - 16px) / 2);}
 
 	/* 서브 */
-	.sub_tit_wp{flex-wrap:wrap;}	
+	.sub_tit_wp{flex-wrap:wrap;}
 	.sitemap_list > li{width:100% !important}
-	
-	/* 정신건강정보 */
-	.sub_01.sub_0110 .graph_box .img_wp img + img{padding-left:0;padding:8px;}
 
-	/* 정신건강기관 */
-	.agencymap_wp .sec1 .l_box{padding:24px}
-	.agencymap_wp .sec1 .area_wp{transform: scale(.7);left: -7%;}	
-	.agencymap_wp .sec1 .l_box .sort_link a{margin:4px }
-
-	/* 센터소개 */
-	.greeting .l_box .h1 {font-size:2rem !important;line-height:2.4rem !important;}
-	.greeting .r_box{padding:32px}
-	.greeting .r_box .h6 p{font-size:1.125rem;}
-	.mivision .sec3 .sec_col_s.col_5 > *{width:100%;}
-	.pg_tab a{font-size:0.938rem;height:40px;padding:8px 10px;}
-	.b_intro2.sec_col > li{flex-wrap:wrap;padding:24px;}
-	.b_intro2.sec_col .info_box .icon{transform: scale(.7);margin:-7% -7% 0}
-	.b_intro2.sec_col .info_box .text_box{width:100%;padding-left:0;}
 }
 
 @media (max-width: 490px){
+	
 	/* 메인 */
-	.main_v_sd .item{height:280px}
-	.main_v_sd .item .mv_m{padding:16px 8px}
-	.main_vsual_wp .slick-nav{display:none;}
-	.main_vsual_wp .slick-dots{position:relative;top:0;width:100%;text-align:center;}
-	.main_sec{padding-top:52px}
 	.main_sec .sec_wp{margin-top:32px}
-	.main_sec2{padding-top:12px;}
-	.main_sec3 .info_links .links li{width:calc(100% / 3)}
-	.main_sec3 .info_links .links li:nth-child(4n){border-right:1px solid #E4EAF8}
-	.main_sec3 .info_links .links li:nth-child(3n){border-right:0}
+	.main_container .section.adp_t {padding-top: 30px;}
+	.main_sec1 .right_wr {overflow: hidden;overflow-x: scroll;}
+	.main_sec1 .right_wr .scr_x {width: 150%;}
+	.main_ban_wp {padding: 0;}
+	.main_ban_wp .slick-controls {top: -60px;right:8px;}
+
 }
 
 @media (max-width: 420px){
-	.main_sec3 .map_wp .area_wp{transform: scale(.7);}
+	/* 메인 */
+	.visual_wrap .slick-nav a {bottom: 100px;}
+	.main_sec1 .now_event {padding: 40px 20px;}
+	.main_business .scl_x {width: 300%;}
+	.main_pro .pro_list {width: 340%;}
+	.subscribe::before {display: none;}
+	.subscribe {width: 100%;padding: 40px 20px;}
 
-	/* 정신건강기관 */
-	.agencymap_wp .sec1 .l_box{padding:24px}
-	.agencymap_wp .sec1 .area_wp{transform: scale(.6);left: -16%;}	
-	.agencymap_wp .sec1 .l_box .sort_link a{margin:4px }	
 }
 
-@media (max-width:380px){	
-	/* 센터소개 */
-	.greeting .l_box .h1 p{display:inline}
+@media (max-width:380px){
+	/* 메인 */
+	.now_event .event_list {padding-left: 0;}
+	.now_event .event_list .item .text_box {padding-left: 16px;}
+	.main_sec2 .btn_box .btn_more, .main_sec3 .btn_box .btn_more {width: 100%;}
 }

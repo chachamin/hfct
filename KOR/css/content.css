@@ -42,6 +42,17 @@
 /* 서브내용 */
 .sub_p_wp * + *{margin-top:1.5rem}
 
+/* 이사장 인사말 */
+.greeting {display: flex;background:url(../img/Group\ 39.png) no-repeat right center;}
+.greeting .txt_box {width: 45%;}
+.greeting .txt_box .txt + .txt {margin-top: 20px;}
+.greeting .img_box {width: 55%;}
+.greeting .img_box .img1 {position: absolute;right: 50px;bottom: 80px;}
+/* .greeting .img_box::after {content:'';display:block; width: 380px;height: 440px;background: linear-gradient(#fff, #d8e2ff);position: absolute;right: 110px;bottom: 80px;z-index: -1;} */
+/* .greeting .img_box::before {content:'';display:block; width: 420px;height: 350px;background: linear-gradient(#fff, #CED9F6);position: absolute;right: 50px;bottom: 80px;z-index: -1;} */
+/* .greeting .img_box .img1::after {content:'';display: block;width: 120px;height: 120px;border-radius: 50%;background-color: gold;position: absolute;bottom: 20px;left: -50px;} */
+
+
 /* 오시는길 */
 .location .loca_top {border-bottom:1px solid #E2E4E9;position: relative;}
 .location .loca_top .map_wp  > div{width:100%;}
@@ -68,11 +79,9 @@
 .basic_tb thead th {padding: 20px 10px;border: solid #e3e3e3;border-width: 1px 0;text-align: center;border-top: 1px solid #000;}
 .basic_tb tbody td, .basic_tb tbody th {padding: 20px 12px;border: solid #e3e3e3;border-width: 1px 0;}
 
-/* 재단일정 - 리스트(달력) */
-/* .calendarWrap {position: relative;} */
-.calendarWrap .cal_hfct {display: flex;justify-content: center;}
+/* 재단일정 - 리스트(달력) - old*/
+/* .calendarWrap .cal_hfct {display: flex;justify-content: center;}
 .calendarWrap .cal_tb_wp {width: 640px;padding: 0 40px;}
-/* .calendarWrap .cal_tb_wp .stickyWrap{position: sticky;top: 120px;} */
 .calendarWrap .calendarDay {display: flex;align-items: center;justify-content: space-between;margin-bottom: 40px;padding: 0 30px;}
 .calendarWrap .calendarDay p {display: inline-block;font-size: 1.75rem;font-weight: 600;}
 
@@ -96,21 +105,15 @@
 
 .calendarWrap .cal_eve_wp .scroll_wrap {max-height:700px;overflow-y: scroll;padding-left: 30px;}
 .calendarWrap .cal_eve_wp .scroll_wrap::-webkit-scrollbar {
-    width: 8px;  /* 스크롤바의 너비 */
+    width: 8px;
 }
-/* 스크롤바 막대 설정*/
 .calendarWrap .cal_eve_wp .scroll_wrap::-webkit-scrollbar-thumb {
-    /* height: 20%;  */
-    /* 스크롤바의 길이 */
-    background: rgba(12, 255, 255, .25); /* 스크롤바의 색상 */
+    background: rgba(12, 255, 255, .25);
     border-radius: 10px;
 }
-
-/* 스크롤바 뒷 배경 설정*/
 .calendarWrap .cal_eve_wp .scroll_wrap::-webkit-scrollbar-track {
-    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+    background: rgba(33, 122, 244, .1);
 }
-
 
 .calendarWrap .cal_eve_tit {padding-left: 25px;font-size: 1.75rem;font-weight: 600;margin-bottom: 40px;}
 .calendarWrap .cal_eve_tit span {font-weight: 600;}
@@ -126,7 +129,79 @@
 .cal_eve_list li .btn_box .btn_more::after {content: '';display: block;width: calc(100% - 2px);height: 100%;border: 1px solid #272760;position: absolute;top: 0px;opacity: 0;transition: all 0.3s linear;}
 .cal_eve_list li .btn_box .btn_more:hover {border: 1px solid rgba(39, 39, 96, 1);}
 .cal_eve_list li .btn_box .btn_more:hover::after {opacity: 1;}
-.cal_eve_list li + li {margin-top: 40px;}
+.cal_eve_list li + li {margin-top: 40px;} */
+
+/* 재단일정 - 리스트(달력) */
+/* .calendarWrap .cal_hfct {display: flex;justify-content: space-between;}
+
+.cal_tb_wp .calendarDay {text-align: center;margin-bottom: 1.25rem;padding: 0 30px;}
+.cal_tb_wp .calendarDay p {display: inline-block;font-size: 1.75rem;font-weight: 600;}
+
+.cal_hfct .in_box_l {width: calc(100% - 450px);}
+.cal_tb_wp .calenderTable{table-layout:fixed;}
+.cal_tb_wp .calenderTable th{padding:1rem;font-size:1.1rem;color:#333;font-weight:600;text-align:center;}
+.cal_tb_wp .calenderTable th.sun{color:#e91313;}
+.cal_tb_wp .calenderTable th.sat{color:#1355e9;}
+.cal_tb_wp .calenderTable td{height:40px;width: 80px;}
+.cal_tb_wp .calenderTable td a {width: 100%;height: 100%;display: inline-flex;align-items: center;justify-content: center;}
+.cal_tb_wp .calenderTable td a:hover{background:rgba(12, 255, 255, .25);}
+.cal_tb_wp .calenderTable td a:hover p {font-weight: 700;}
+.cal_tb_wp .calenderTable td.pick a {background:rgba(12, 255, 255, .25);}
+.cal_tb_wp .calenderTable td.pick a p {font-weight: 700;}
+.cal_tb_wp .calenderTable td > p{position:relative;}
+.cal_tb_wp .calenderTable td > p span{width:20px;height:20px;background:#f4f4f4;border-radius:50%;text-align:center;line-height:20px;color:#666;font-size:.875em;font-weight:500;}
+.cal_tb_wp .calenderTable td p.sun {color:#e91313;}
+.cal_tb_wp .calenderTable td p.sat {color:#1355e9;}
+
+.cal_tb_wp .cal_btn {display: flex;justify-content: space-between;padding: 0 30px;}
+.cal_tb_wp .cal_btn a:hover {font-weight: 600;}
+
+.in_box_l .cal_txt_wp {margin-top: 2rem;padding: 0 30px;}
+.cal_txt_wp .item .tit {font-size: 1.75rem;font-weight: 500;}
+.cal_txt_wp .item .place {padding: 10px 0;}
+
+.cal_hfct .in_box_r {width: 400px;padding: 32px;} */
+
+/* 재단일정 - 리스트(달력) */
+
+.cal_tb_wp {width: calc(100% - 570px);}
+.cal_tb_wp .calendarDay {text-align: center;margin-bottom: 1.25rem;}
+.cal_tb_wp .calendarDay p {display: inline-block;font-size: 1.75rem;font-weight: 600;}
+
+.cal_tb_wp .calenderTable{table-layout:fixed;}
+.cal_tb_wp .calenderTable th{padding:1rem;font-size:1.1rem;color:#333;font-weight:600;text-align:center;}
+.cal_tb_wp .calenderTable th.sun{color:#e91313;}
+.cal_tb_wp .calenderTable th.sat{color:#1355e9;}
+.cal_tb_wp .calenderTable td{height:40px;width: 80px;}
+.cal_tb_wp .calenderTable td a {width: 100%;height: 100%;display: inline-flex;align-items: center;justify-content: center;}
+.cal_tb_wp .calenderTable td a:hover{background:rgba(12, 255, 255, .25);}
+.cal_tb_wp .calenderTable td a:hover p {font-weight: 700;}
+.cal_tb_wp .calenderTable td.pick a {background:rgba(12, 255, 255, .25);}
+.cal_tb_wp .calenderTable td.pick a p {font-weight: 700;}
+.cal_tb_wp .calenderTable td > p{position:relative;}
+.cal_tb_wp .calenderTable td > p span{width:20px;height:20px;background:#f4f4f4;border-radius:50%;text-align:center;line-height:20px;color:#666;font-size:.875em;font-weight:500;}
+.cal_tb_wp .calenderTable td p.sun {color:#e91313;}
+.cal_tb_wp .calenderTable td p.sat {color:#1355e9;}
+
+.cal_tb_wp .cal_btn {display: flex;justify-content: space-between;padding: 0 30px;}
+.cal_tb_wp .cal_btn a:hover {font-weight: 600;}
+
+
+/* .cal_cont_wp .cont_list {width: 100%;} */
+.cal_cont_wp .cont_list .item {display: flex;justify-content: space-between;}
+.cal_cont_wp .txt_box {width: calc(100% - 570px);padding-left: 30px;}
+.cal_cont_wp .txt_box .tit {font-size: 1.75rem;font-weight: 500;}
+.cal_cont_wp .txt_box .place {padding: 10px 0;}
+
+.cal_cont_wp .img_box {width: 400px;padding: 32px;}
+
+/* .in_box_l .cal_txt_wp {margin-top: 2rem;padding: 0 30px;}
+.cal_txt_wp .item .tit {font-size: 1.75rem;font-weight: 500;}
+.cal_txt_wp .item .place {padding: 10px 0;}
+
+.cal_hfct .in_box_r {width: 400px;padding: 32px;} */
+
+
 
 
 /* 재단일정 - 뷰 */
