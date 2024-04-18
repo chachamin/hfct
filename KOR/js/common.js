@@ -59,6 +59,30 @@ $(document).ready(function () {
 		]
 	});
 
+	//  sub_festival_sd
+	$('.fv_sd').slick({
+		autoplay: true,
+		dots: true,
+		pauseOnDotsHover: false,
+		pauseOnHover: false,
+		speed: 2500,
+		arrows: false,
+		autoplaySpeed: 6000,
+		fade: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		cssEase: 'linear',
+		responsive: [
+			{
+				breakpoint: 1280,
+				settings: {
+					adaptiveHeight: true
+				}
+			}
+		]
+	});
+
 
 	$('.main_v_sd').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
 		$('.main_v_sd .item').removeClass('active');
