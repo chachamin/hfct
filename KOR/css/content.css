@@ -53,7 +53,7 @@
 /* .greeting .img_box .img1::after {content:'';display: block;width: 120px;height: 120px;border-radius: 50%;background-color: gold;position: absolute;bottom: 20px;left: -50px;} */
 
 /* 비전과 목표 */
-.vision_box {border: 1px solid #E2E4E9;padding: 3.75rem 1.875rem;text-align: center;}
+/* .vision_box {border: 1px solid #E2E4E9;padding: 3.75rem 1.875rem;text-align: center;}
 .vision_box .in_box + .in_box {margin-top: 3.75rem;}
 .vision_box .in_box .tit {font-size: 1.25rem;margin-bottom: 20px;}
 .vision_box .in_box .rd_box3 {width: 50%;margin: 0 auto;height: 65px;line-height: 65px;font-size: 1.5rem;font-weight: 600;border-radius: 3px;}
@@ -74,7 +74,39 @@
 .vision_box .in_box .task_list .dep2 li::after {content: '';display: block;width: 1px;height:30px;background: #C6C6D4;position: absolute;top: -30px;left: 50%;transform: translateX(-50%);}
 .vision_box .in_box .task_list .dep2 li::before {content: '';display: block;width: 109%;height: 1px;background: #C6C6D4;position: absolute;top: -30px;left: 50%;}
 .vision_box .in_box .task_list .dep2 li:last-child::before {display: none;}
-.vision_box .in_box .task_list .dep2:nth-child(2) li:first-child::before {width: 328%;}
+.vision_box .in_box .task_list .dep2:nth-child(2) li:first-child::before {width: 328%;} */
+
+/* 비전과 목표 */
+.vision_wp .rod_box {padding:45px;border-radius: 5px;display: flex;box-shadow: 0px 0px 24px 4px rgba(31, 0, 209, 0.074)}
+.vision_wp .rod_box .img_wp {width: 230px;height: 230px;padding: 40px;box-shadow: 0px 0px 24px 4px rgba(31, 0, 209, 0.074);border-radius: 20px;}
+.vision_wp .rod_box .txt {width: calc(100% - 300px);padding-left: 80px;}
+.vision_box {border: 1px solid #E2E4E9;padding: 3.75rem 1.875rem;text-align: center;}
+.vision_box .in_box {width: 800px; margin: 0 auto;position: relative;}
+.vision_box .in_box + .in_box {margin-top: 3.75rem;}
+.vision_box .box1 {background:linear-gradient(to top, #CF1D6A, #272760);position: relative;border-radius: 5px;padding: 10px;}
+.vision_box .box1 .txt_wp {width: 100%;background: #fff;}
+.vision_box .box1::before {content: '';display: block;width: calc(100% - 40px);height: 10px;background: #fff;position: absolute;top: 0;left: 20px;}
+.vision_box .box1::after {content: '';display: block;width: calc(100% - 40px);height: 10px;background: #fff;position: absolute;bottom: 0;left: 20px;}
+.vision_box .in_box .tit {color: #B70F15;font-weight: 600;font-size: 1.25rem;margin-bottom: 10px;}
+.vision_box .box1 .txt {font-weight: 600;font-size: 1.5rem;}
+.vision_box .box2 {border-radius: 5px;padding: 20px;position: relative;background: rgba(0, 102, 255, 0.11);}
+.vision_box .box2::after {content: '';display: block;width: 12px;height: 12px;border-radius: 50%;background-color: #272760;position: absolute;top: -6px;left: 50%;transform: translateX(-50%);}
+.vision_box .box2::before {content: '';display: block;width: 1px;height: 30px;background: #C6C6D4;position: absolute;top: -30px;left: 50%;transform: translateX(-50%);}
+.vision_box .box2 .gol_list {padding: 20px;width: 100%;background: #fff;border-radius: 3px;justify-content: center;}
+.vision_box .box2 .gol_list li {padding: 7px 20px;background: rgba(0, 102, 255, 0.11);border-radius: 20px;margin-left: -10px;}
+.vision_box .box3 {position: relative;}
+.vision_box .box3::after {content: '';display: block;width: 65px;height: 32px;background: url(../img/goal_a.png) no-repeat center;position: absolute;top: -30px;left: 50%;transform: translateX(-50%);}
+.vision_box .box3 .task_list {justify-content: space-between;}
+.vision_box .box3 .task_list > li {width: calc(50% - 32px);}
+.vision_box .box3 .task_list > li .d_tit {padding: 10px;color: #fff;font-weight: 600;border-radius: 5px;position: relative;}
+.vision_box .box3 .task_list > li .d_tit::after {content: '';display: block;width: 1px;height: 16px;background: #C6C6D4;position: absolute;bottom: -16px;left: 50%;transform: translateX(-50%);}
+.vision_box .box3 .task_list > li.subj_01 .d_tit {background: #272760;}
+.vision_box .box3 .task_list > li.subj_02 .d_tit {background: #CF1D6A;}
+.vision_box .box3 .task_list > li .dep2 {margin-top: 16px;border: 1px solid #E2E4E9;border-radius: 5px;padding: 5px 30px;background: #F6F8FA;}
+.vision_box .box3 .task_list > li .dep2 li{padding: 10px 0;}
+.vision_box .box3 .task_list > li .dep2 li + li {border-top: 1px solid #ddd;}
+.vision_box .box3 .task_list > li .dep2 li.empty {height: 45px;}
+.vision_box .box3 .task_list > li .dep2 li.no_border {border-top: none}
 
 /* 조직도 */
 .org_tree .con_box {border: 1px solid #E2E4E9;padding: 3.75rem 0;text-align: center;}

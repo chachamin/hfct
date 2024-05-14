@@ -2,24 +2,35 @@
 
 @media screen and (min-width: 1930px) and (max-width: 2560px) {
 	.in_wrap {max-width: 1540px;width: 100%;margin: 0 auto;}
-	.main_container .section {width: 100%;height: auto;}
+	.main_container .section {width: 100%;}
+}
+
+@media (max-width: 1920px) {
+	#wrapper {width: 100%;overflow: hidden}
+	.inner {position: relative;padding: 0 85px;}
+	.sub_wraper .in_wrap {max-width: 1540px;width: 100%;}
+	.in_wrap {max-width: 89%;width: 100%;}
+	.main_container .section {width: 100%;height: 100vh;}
+	.main_container .section.adp_t {padding-top: 100px;overflow: hidden;}
+	.main_vsual_wp {padding-top: 100px;overflow:hidden;}
+}
+
+@media (max-width: 1800px){
+	.gnb_r {right: -55px;}
+	.global_quick .site_list li {width:200px;}
+	/* .global_quick {display:none;} */ /*수정*/
+	/* .moVer_quick {display:block;} */ /*수정*/
+	.lang_type .type_list {right:30px;} /*수정*/
+	.loca_nav {bottom:120px;}
+
+	#footer {padding-bottom:50px;}
 }
 
 @media (max-width: 1700px){
-	.gnb_r {right: -55px;}
-	.global_quick {display:none;}
-	.moVer_quick {display:block;}
-	.loca_nav {bottom:120px;}
+	.main_sec2 .right_wr .dp_flex {justify-content: space-between;}
 }
 
-@media (max-width: 1700px){
-	.gnb_r {right: -55px;}
-	.global_quick {display:none;}
-	.moVer_quick {display:block;}
-	.loca_nav {bottom:120px;}
-}
-
-@media (max-width: 1400px){
+@media (max-width: 1440px){
 	/* 기본 */
 	body,html{font-size:15px;
 	  -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
@@ -28,24 +39,25 @@
 	  -o-text-size-adjust : none;  /* 오페라 구버전 */
 	}
 	.inner{width:100%;padding-right:1.25rem;padding-left:1.25rem; margin:0 auto; box-sizing:border-box}	
-	.loca_nav{right:16px;bottom:16px;}
 	#footer > .inner{padding-right:1.25rem;padding-left:1.25rem;}
 
-	/* 기본 */
-	#header{height:80px;}
-	#header #mMenu{display:block;}
-	#gnb,.tnb{display:none;}
-	#sub_area{word-break:break-all;}
+	.global_quick .site_list li {width:160px;}
 
+	/* 기본 */
 	.logo_area h1 {left:1.25rem;}
+	.gnb_r {right: 30px;}
+
+	#content_wrap {padding:90px 1.25rem;}
+	#content_wrap .in_wrap {padding:0 0;}
 
 	/* 메인 */
-	.main_sec1 .right_wr {padding-left:0;padding-top:4rem;}
+	.main_sec2 .right_wr {padding-top:4rem;}
 	.main_business .con_box.gal_type .img_box {height:auto;}
 	.main_pro .pro_list.col_4 li a {padding: 0 16px;}
+	.main_banner .sec_title {left: 1rem;}
+
 	.main_newsletter .dp_flex {justify-content: end;}
 	.subscribe {margin-right: 9rem;}
-	.main_banner .sec_title {left: 1rem;}
 
 	/* 레이어팝업창 */
 	.layerpopup{max-width:98%}
@@ -58,13 +70,45 @@
 	.layer_pop_wp .layer_flex{width:100%}
 }
 
+@media (max-width: 1400px){
+
+	/* 기본 */
+	#gnb .in_wrap {padding-left:180px;padding-right:180px;}
+	.gnb_r {right: 145px;}
+
+	#snb {padding-right:0;}
+
+	/* #header{height:80px;}
+	#header #mMenu{display:block;}
+	#gnb,.tnb{display:none;}
+	#sub_area{word-break:break-all;} */
+
+	.logo_area h1 {left:1.25rem;}
+
+	.global_quick {display:none;} /*수정*/
+	.moVer_quick {display:block;} /*수정*/
+	.in_wrap {max-width: 100%;width: 100%;} /*수정*/
+
+	/* 주요사업 - 지역축제 */
+	.local_f_wp .fv_sd .slick-slide img {max-width:unset;}
+
+}
+
+@media (max-width: 1280px){
+	/*기본*/
+
+	#snb {display:none;}
+	#subcontent {width:100%;}
+	/*메인*/
+	.visual_wrap {height:auto;}
+	.main_v_sd .item {height:auto;}
+	.main_sec2 .right_wr {padding-left:3rem;}
+}
+
 @media (max-width: 1200px){
 	/* 기본 */
 	#header{height:80px;}
 	.logo_area img{height:40px}
-	#header #mMenu{display:block;}
-	#gnb,.tnb{display:none;}
-	#sub_area{word-break:break-all;}
 
 	/* 메인 */
 	.main_vsual_wp.inner {padding-right: 0;padding-left: 0;}
@@ -74,10 +118,10 @@
 	.visual_wrap .slick-nav a {bottom:250px}
 
 	.main_container .section.adp_t {padding-top: 50px;}
-	.main_sec1 {padding: 0;}
-	.main_sec1 .left_wr {padding-left: 0;width: 360px;}
-	.main_sec1 .right_wr {width: calc(100% - 360px);}
-	.main_sec1 .right_wr .gal_type {width: 50%;padding: 0 16px;}
+	.main_sec2 {padding: 0;}
+	.main_sec2 .left_wr {padding-left: 0;width: 360px;}
+	.main_sec2 .right_wr {width: calc(100% - 360px);}
+	.main_sec2 .right_wr .gal_type {width: 50%;padding: 0 16px;}
 
 	.main_pro .pro_list.col_4 li {width: 25%;}
 
@@ -88,8 +132,14 @@
 }
 
 @media (max-width: 1140px){
+	/*기본*/
+	#gnb .in_wrap {padding-left:155px;padding-right:155px;}
+	.lang_type .type_list {right:1.25rem;}
+	.gnb_r {right: 120px;}
+	#gnb .in_wrap > ul > li > a {padding:16px 0;}
+
 	/* 메인 */
-	.main_sec2 {padding: 3.75rem 0 3.75rem;}
+	.main_sec3 {padding: 3.75rem 0 3.75rem;}
 	.main_business .con_box.gal_type a {padding: 0 16px;}
 	.main_newsletter {margin-top: 80px;}
 	.subscribe {padding: 40px 10px;}
@@ -102,7 +152,28 @@
 	.snb_0201_wp li{width: calc((100% - 32px) / 4);}
 	.sub0203 .top_box .step_ul li{width:calc((100% - 72px) / 3);}
 
+	/* 재단일정 */
+	.cal_tb_wp {width:calc(100% - 500px);}
+	.cal_cont_wp .txt_box {width:calc(100% - 500px);}
 
+
+}
+
+@media (max-width: 1000px){
+	/* 기본 */
+	#header #mMenu{display:block;}
+	#gnb,.tnb{display:none;}
+	#sub_area{word-break:break-all;}
+
+	/* 재단소개 */
+	.vision_box .in_box .gol_list li {width: 30%;}
+	.vision_box .in_box .task_list .dep2 {flex-wrap:wrap;padding-top:0;}
+	.vision_box .in_box .task_list .dep2 li {width:100%;margin-bottom:10px;}
+	.vision_box .in_box .task_list .dep2 li::after {display:none;}
+	.vision_box .in_box .task_list .dep2 li::before{display:none;}
+	.vision_box .in_box .task_list .dep1:nth-child(1) .d_tit::before {width:214%;}
+	
+	
 }
 
 @media (max-width: 990px){
@@ -141,10 +212,22 @@
 	.pg_tab{flex-wrap:wrap;}
 	.pg_tab a{margin-bottom:8px}
 
+	/* 주요사업 - 월간화사 */
+	.m_hs .biz_type > li {width:calc((100% - 72px) / 3);padding:30px 16px;}
+
+	/* 재단일정 */
+	.cal_tb_wp {width:60%;}
+	.cal_cont_wp .txt_box {width:60%;}
+	.cal_cont_wp .img_box {width:35%}
+
+}
+@media (max-width: 800px){
+	.vision_box .in_box {width: 100%;}
 }
 
 @media (max-width: 768px){
 	/* 기본 */
+	#header #mMenu {padding-top:25px;}
 	select,input{font-size:.875rem;margin-top:2px;margin-bottom:2px;}
 	select{min-width:42px;padding:8px 18px 8px 8px;background-position:right 5px center}
 	#footer .foot_bottom .foot_b_l,
@@ -152,12 +235,14 @@
 	#footer .foot_bottom .foot_b_l .txt_box{margin:16px 0 24px;margin-left:0;}
 
 	/* 메인 */
-	.main_sec1 .in_wrap.dp_flex {flex-wrap: wrap;}
-	.main_sec1 .left_wr {width: 100%;max-width: 100%;}
-	.main_sec1 .right_wr {width: 100%;}
+	.main_vsual_wp {padding-top: 75px;}
+	.visual_wrap .slick-nav a {bottom: 160px;}
+	.main_sec2 .in_wrap.dp_flex {flex-wrap: wrap;}
+	.main_sec2 .left_wr {width: 100%;max-width: 100%;}
+	.main_sec2 .right_wr {width: 100%;padding-left:0;}
 	.main_business {overflow-x: scroll;}
 	.main_business .scl_x {width: 200%;}
-	.main_sec3 {padding-top: 0;}
+	.main_sec4 {padding-top: 0;}
 	.main_pro {overflow-x: scroll;}
 	.main_pro .pro_list {justify-content: start;width: 200%;}
 	.main_pro .pro_list.col_4 li {width: 25%;}
@@ -192,45 +277,70 @@
 	.table_wp table {width:780px;}
 	.sitemap_list > li{width:calc((100% - 48px) / 2);}
 
+	/* 이사장 인사말 */
+	.greeting {background:none;}
+	.greeting .txt_box {width:100%;}
+	.greeting .subtit_1 {background:url(../img/greeting_bg.png) no-repeat right center;background-size:100%;padding:100px 0;}
+
+	/* 재단소개 */	
+	/* .vision_box .in_box .rd_box3 {width:100%;}
+	.vision_box .in_box .gol_list {padding:0;}
+	.vision_box .in_box .gol_list li::after {display:none;}
+	.vision_box .in_box .task_list .dep1:nth-child(1) .d_tit::before {width: 219%;} */
+	/* .vision_wp .rod_box {flex-wrap: wrap;} */
+	/* .vision_wp .rod_box .txt {width: 100%;padding-left: 0;padding-top: 20px;} */
+	.vision_wp .rod_box .img_wp {width: 150px;height: 150px;}
+	.vision_wp .rod_box .txt {width: calc(100% - 150px);padding-left: 30px;}
+	.vision_box .box3 .task_list > li .dep2 li {padding-bottom: 0;height: 44px;}
+
+	/* 조직도 */
+	.org_tree .con_box {padding:3.75rem 1.5rem;}
+	.org_list {width:100%;}
+	.org_list .org_item {width:200px;}
+	.org_d::after {width:calc(100% - 200px);}
+	
+	/* 주요사업 - 화사로프로젝트 */
+	.hs_p .step_list li {width: calc((100% - 40px) / 3);}
+	.hs_p .step_list li::after {right: -0.688em;}
+
+	/* 주요사업 - 화사로와 */
+	.hs_w .biz_type {flex-wrap:wrap;}
+	.hs_w .biz_type li {width:100%;margin-bottom:10px;}
+
+	/* 주요사업 - 지역축제 */
+	.sec_box_wp {flex-wrap:wrap;}
+	.sec_box_wp .left_a {width:100%;}
+	.sec_box_wp .right_a {width:100%;}
+	.local_f_wp .edge_box {padding:32px;}
+
+	
+	/* 재단일정 */
+	.cal_tb_wp .cal_btn {padding: 0 0;}
+
+	/* 프로그램 뷰 */
+	.view_bd .edu_body img {width:100% !important;height:auto !important;}
+
 }
 
 @media (max-width: 720px){
 	/* 기본 */
-	/* #footer .foot_top .inner{flex-wrap:wrap;}
-	#footer .foot_top .foot_t_l ul{flex-wrap:wrap;width:100%;justify-content: space-between;}
-	#footer .foot_t_l{width:100%;}
-	#footer .foot_top .foot_t_l ul > li{width:calc((100% - 24px) / 4);border:1px solid #91949b;border-radius:8px;}
-	#footer .foot_top .foot_t_l ul > li:not(:first-child){padding-left:0;margin-left:0}
-	#footer .foot_top .foot_t_l ul > li:not(:first-child):before{display:none;}
-	#footer .foot_top .foot_t_l ul > li a{display: flex;padding:12px 8px;margin:2px;text-align:center;word-break: break-all;align-items: center;justify-content: center;font-size:.875rem;height:100%;}
-	#footer .foot_top .related_site {margin-top:8px;width:100%}
-	#footer .related_site ul{width:100%} */
+	.moVer_quick .site_wp {overflow:hidden;overflow-x:scroll;}
+	.moVer_quick .site_list {width:150%;}
+	
 
 	/* 메인 */
-	/* .main_v_sd .item{height:350px}
-	.main_v_sd .item img {width: 100%;height: 100%;} */
-
-
-	.main_sec1 .tab_cont li a{align-items:normal;padding:8px 0}
-	.main_sec1 .bo_tit{width: 100%;height:auto;margin:4px 0;font-size:1.05rem;line-height:1.4rem;padding: 0;}
-	.main_sec1 .sec_wp .main_event_wp{width:100%;}
-	.main_sec1 .sec_wp .main_event_wp .item{padding:20px;}
-
-	.main_sec2{padding-top:32px}
-	.main_sec2 .sec_wp > *{width:calc((100% - 16px) / 2);margin-top:40px}
-	.main_sec3 .map_con{flex-wrap:wrap;height:auto;}
-	.main_sec3 .map_wp{width:100%}
-	.main_sec3 .map_con .links{width:100%;display:flex;flex-wrap:wrap;justify-content: space-between;}
-	.main_sec3 .map_con .links li{height:auto;width:calc((100% - 16px) / 2)}
-	.main_sec3 .map_con .links li a{padding:8px;    font-size: .875rem;}
-	.main_sec3 .map_con .links li a:after{width:16px;height:16px;margin-top:-8px;background-position:-350px -6px;}
-	.main_sec3 .info_links .links li{width:calc(100% / 4)}
-	.main_sec3 .info_links .links li:nth-child(5n){border-right:1px solid #E4EAF8}
-	.main_sec3 .info_links .links li:nth-child(4n){border-right:0}
+	.main_sec2 .tab_cont li a{align-items:normal;padding:8px 0}
+	.main_sec2 .bo_tit{width: 100%;height:auto;margin:4px 0;font-size:1.05rem;line-height:1.4rem;padding: 0;}
+	.main_sec2 .sec_wp .main_event_wp{width:100%;}
+	.main_sec2 .sec_wp .main_event_wp .item{padding:20px;}
 
 	/* 서브기본 */
 	#snb .snb a{height:48px;padding:6px 8px;font-size:0.938rem;line-height:1rem;word-break:break-word;}	
 	.snb_0201_wp li{width:calc((100% - 24px) / 3);}
+
+	/* 주요사업 - 화사로프로젝트 */
+	.hs_p .step_list {flex-wrap:wrap;}
+	.hs_p .step_list li {width: 100%;margin-bottom:10px;}
 
 }
 
@@ -248,17 +358,67 @@
 	.main_container .section.adp_t {padding-top: 30px;}
 
 	/* 서브기본 */
-	#pg_satisfaction .user_opinion,
+	/* #pg_satisfaction .user_opinion,
 	#pg_satisfaction .u_s_tit{padding:24px 24px 16px;}
 	#pg_satisfaction .radio_gp_wp{padding:0px 24px 16px;}
 	#pg_satisfaction .user_opinion{flex-wrap:wrap;}
 	#pg_satisfaction .user_opinion textarea{width:100%;height:52px;margin-right:0;margin-bottom:6px;}
 	#pg_satisfaction .user_opinion .btn{width:100%}
-
+	
 	#snb .snb li{width:calc(100% / 3);}
 	#snb .snb li:nth-child(3n) a{border-right:0}
-	#snb .snb li:nth-child(5n) a{border-right:1px solid #E2E4E9}
+	#snb .snb li:nth-child(5n) a{border-right:1px solid #E2E4E9} */
 
+	.sub_tit_wp {flex-wrap:wrap;}
+	.sub_tit_wp .h3 {width:100%;}
+	.sub_tit_wp .root_screen {width:100%;margin-top:10px;}
+
+	/* 프로그램 */
+	.edu_list > li {flex-wrap:wrap;}
+	.edu_list li .img_box {width:100%;max-height:300px;text-align:center;}
+	.edu_list li .img_box img {max-height:100%;}
+	.edu_list li .cont {width:100%;padding-left:0;padding-top:30px;}
+
+	/* 프로그램 뷰 */
+	.pro_view_wp .view_hd {flex-wrap:wrap;}
+	.pro_view_wp .view_hd .img_box {width:100%;}
+	.pro_view_wp .view_hd .text_box {width:100%;padding-left:0;padding-top:30px;padding-bottom:30px;}
+
+	/* 재단일정 */
+	.cal_tb_wp {width:100%;}
+	.cal_cont_wp .cal_con_list .item {flex-wrap:wrap;}
+	.cal_cont_wp .txt_box {width:100%;order:2;padding-top:20px;padding-left:0;}
+	.cal_cont_wp .img_box {width:100%;order:1;text-align:center;padding-top:20px}
+	.cal_cont_wp .cal_con_list li + li {border-top:1px dashed #ddd;}
+
+	/* 재단소개 */	
+	.vision_box .in_box .gol_list {flex-wrap:wrap;}
+	.vision_box .in_box .gol_list li {width:auto;margin-bottom:1rem;}
+	.vision_box .in_box .task_list {flex-wrap:wrap;}
+	.vision_box .in_box .task_list .dep1 .d_tit {width:100%;margin-bottom:1rem;}
+	.vision_box .in_box .task_list .dep1:nth-child(1) .d_tit {margin-top:0;}
+	.vision_box .in_box .task_list .dep1:nth-child(1) .d_tit::before {display:none;}
+	.vision_box .in_box .task_list .dep1 .d_tit::after {display:none;}
+	.vision_box .in_box .task_list .dep1 {width:100%;}
+	.vision_box .in_box .task_list .dep1:nth-child(1) {padding-right:0;}
+	.vision_box .in_box .task_list .dep1:nth-child(2) {padding-left:0;}
+	.vision_box .in_box .task_list .dep1.subj_02 {margin-top: 20px;}
+	.vision_box .in_box .task_list .dep1.subj_02 .empty {display: none;}
+	.vision_box .box3 .task_list > li .dep2 li {height: unset;}
+	.vision_box .box1 .txt_wp {padding: 0 30px;}
+
+	/* 조직도 */
+	.org_d {flex-wrap:wrap;}
+	.org_d > div {width:100%;}
+	.org_d::after {display:none;}
+	.org_list .org_item.org_st4.team_1::after {display:none;}
+	.org_list .org_item.org_st6.team_3::after {display:none;}
+	.org_d > div > ul {padding-top:0;}
+	.org_list:before {height:800px;}
+
+	/* 주요사업 - 월간화사 */
+	.m_hs .biz_type {flex-wrap:wrap;}
+	.m_hs .biz_type > li {width:calc(50% - 16px);margin-bottom:10px;}
 }
 
 @media (max-width: 540px){
@@ -288,7 +448,7 @@
 	.visual_wrap .slick-nav a {bottom: 130px;}
 	.visual_wrap .slick-nav a.slick-prev, .visual_wrap .slick-nav a.slick-next {width: 40px;height: 40px;background-size: 100%;}
 	.main_newsletter .dp_flex {justify-content: center;}
-	.subscribe {margin-right: 0;}
+	.subscribe {margin-right: 0;width:60%;}
 
 	.main_banner .sec_title {top: -45px;left: 28px;}
 	.main_banner {padding: 100px 0 60px;}
@@ -301,36 +461,83 @@
 	.table_wp table {width:620px;}
 	.basic_tb thead th,.basic_tb tbody td,.basic_tb tbody th,
 	.custom_tb thead th,.custom_tb tbody td, .custom_tb tbody th{padding:10px 8px;}
-	.breadcrumb{width:100%;margin-top:12px}
+	/* .breadcrumb{width:100%;margin-top:12px} */
 	.snb_0201_wp li{width:calc((100% - 16px) / 2);}
 
 	/* 서브 */
 	.sub_tit_wp{flex-wrap:wrap;}
 	.sitemap_list > li{width:100% !important}
 
+	/* 이사장 인사말 */
+	.greeting .subtit_1 {background-position: right -45px center;padding:12px 130px 100px 0;}
+
+	/*오시는길*/
+	.location .loca_top .float_box {width:100%;}
+	.location .loca_top .float_box ul {flex-wrap:wrap;}
+	.location .loca_top .float_box li {width:100%;justify-content:start;}
+	.location .loca_top .float_box li + li {margin-left:0;margin-top:7px;}
+	.location .loca_top .float_box li::after {width: 100%;height: 1px;top: auto;bottom:-4px;right: 0;}
+
+	/* 주요사업 - 지역축제 */
+	.local_f_wp .fv_sd .slick-slide img {max-width:unset;}
+	.local_f_wp .edge_box .ico {width:40px;height:40px;}
+	.local_f_wp .edge_box .txt {width:calc(100% - 40px);}
+	.local_f_wp .fv_tag {width:150px;}
+
+	/*주요사업 - 화사로와*/
+	/* .noti_box {flex-wrap:wrap;justify-content:center;padding:24px 16px;}
+	.noti_box .txt {width:100%;text-align:center;margin-top:16px;}} */
+	
+	
+
 }
 
 @media (max-width: 490px){
 	
 	/* 메인 */
+	.visual_wrap .slick-nav a {bottom: 100px;}
 	.main_sec .sec_wp{margin-top:32px}
 	.main_container .section.adp_t {padding-top: 30px;}
-	.main_sec1 .right_wr {overflow: hidden;overflow-x: scroll;}
-	.main_sec1 .right_wr .scr_x {width: 150%;}
+	.main_sec2 .right_wr {overflow: hidden;overflow-x: scroll;}
+	.main_sec2 .right_wr .scl_x {width: 150%;}
 	.main_ban_wp {padding: 0;}
 	.main_ban_wp .slick-controls {top: -60px;right:8px;}
 
+	/* 프로그램 */
+	.edu_list > li {padding-bottom:100px;}
+
+	/* 이사장 인사말 */
+	.greeting .subtit_1 {background:none;padding:0;}
+	.greeting .sign_box {background:url(../img/greeting_bg.png) no-repeat right center;height:200px;background-size:100%;position:relative;}
+	.greeting .sign_box > div {position:absolute;left:10px;top:50%;transform:translateY(-50%);width:190px;}
+	.greeting .sign_box > div img {margin-top:10px;}
+
+	/*조직도*/
+	.org_b > ul {flex-wrap:wrap;}
+	.org_b > ul > li {width:100%;}
+	.org_b > ul::after {display:none;}
+	.org_list:before {height: 870px;}
+		
+	/* 주요사업 - 월간화사 */
+	.m_hs .biz_type > li {width:100%;}
 }
 
-@media (max-width: 420px){
+@media (max-width: 425px){
 	/* 메인 */
 	.visual_wrap .slick-nav a {bottom: 100px;}
 	.main_sec1 .now_event {padding: 40px 20px;}
 	.main_business .scl_x {width: 300%;}
 	.main_pro .pro_list {width: 340%;}
-	.subscribe::before {display: none;}
-	.subscribe {width: 100%;padding: 40px 20px;}
+	/* .subscribe::before {display: none;} */
+	.subscribe {width: 70%;padding: 40px 0;}
+	.moVer_quick .site_list {width: 200%;}
+	
+	/* 프로그램 뷰 */
+	.pro_view_wp .view_hd .info .tit{min-width:80px;margin-right: 0px;}
+	.pro_view_wp .view_hd .info li > div {padding: 7px 5px;}
 
+	/* 재단소개 */	
+	.vision_box .in_box .rd_box3 {white-space:normal;height:auto;line-height:inherit;padding:16px 10px;word-break:keep-all;}
 }
 
 @media (max-width:380px){
@@ -338,4 +545,30 @@
 	.now_event .event_list {padding-left: 0;}
 	.now_event .event_list .item .text_box {padding-left: 16px;}
 	.main_sec2 .btn_box .btn_more, .main_sec3 .btn_box .btn_more {width: 100%;}
+
+	/* 프로그램 */
+	.edu_list > li {padding-bottom:100px;}
+}
+
+@media (max-width:375px){
+
+	/*서브기본*/ 
+	.sub_tit_wp .root_screen {flex-wrap:wrap;}
+	.sub_tit_wp .root_screen .breadcrumb {width:100%;}
+	.screen_unit  {margin-left:0;margin-top:10px;}
+}
+
+@media (max-width:350px){
+
+	/* 프로그램 뷰 */
+	.pro_view_wp .view_hd .info li{flex-wrap:wrap;}
+	.pro_view_wp .view_hd .info .tit {min-width:100%;}
+	.pro_view_wp .view_hd .info li > div {padding: 7px 5px;}
+}
+
+@media (max-width:320px){
+
+	/* 이사장 인사말 */
+	.greeting .sign_box {background-position:right -20px center;height: 150px;}
+
 }
